@@ -187,6 +187,8 @@ $CPLUSPLUS -o birthday.mt19937div32.sort birthday.cpp -DRNG_TYPE='divided_rng<st
 
 $CPLUSPLUS -o birthday.spitmix64skip65536.sort birthday.cpp -DRNG_TYPE='skipping_rng<SplitMix64,65536>'  -DUSE_SORTING -DRNG_INCLUDE='"splitmix.hpp"'
 
+$CPLUSPLUS -o birthday.minstdskip49981.sort birthday.cpp -DRNG_TYPE='skipping_rng<regularized_rng<std::minstd_rand,uint32_t>,49981>'  -DUSE_SORTING -DRNG_INCLUDE='"splitmix.hpp"'
+
 
 $CPLUSPLUS -o birthday.splitmix64div2.bloomfilter birthday.cpp -DRNG_TYPE='divided_rng<SplitMix64,2>' -DRNG_INCLUDE='"splitmix.hpp"' -DUSE_BLOOMFILTER
 
