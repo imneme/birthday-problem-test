@@ -2,6 +2,17 @@
 
 use strict;
 
+use Getopt::Long;
+
+my ($opt_sort, $opt_hash, $opt_bloom) = (0,0,0);
+
+GetOptions ("sort"  => \$opt_sort,
+	    "hash"  => \$opt_hash,
+	    "bloom" => \$opt_bloom);
+
+die "$0: pick just one option\n" if ($opt_sort + $opt_hash + $opt_bloom > 1);
+
+$opt_sort = 1 if ($opt_sort + $opt_hash + $opt_bloom == 0);
 
 sub median(@) {
     return (sort { $::a <=> $::b } @_)[@_/2];
@@ -32,9 +43,17 @@ my %shortnameFor = (
     "Testing for repeats"     => "Total",
     );
 
-#my @ordering = ("Storing", "Sorting", "Scanning", "Total", "Repeats", "p-value");
-#my @ordering = ("Checking", "Total", "Repeats", "p-value");
-my @ordering = ("Candidates", "Rechecking", "Total", "Repeats", "p-value");
+my @ordering;
+
+if ($opt_sort) {
+    @ordering = ("Storing", "Sorting", "Scanning", "Total", "Repeats", "p-value");
+} elsif ($opt_hash) {
+    @ordering = ("Checking", "Total", "Repeats", "p-value");
+} elsif ($opt_bloom) {
+    @ordering = ("Candidates", "Rechecking", "Total", "Repeats", "p-value");
+} else {
+    die "Huh?\n";
+}
 
 foreach my $file (@ARGV) {
     open my $fh, '<', $file or die "Can't open '$file', $!\n";
