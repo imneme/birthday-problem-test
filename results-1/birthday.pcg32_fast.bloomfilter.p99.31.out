@@ -1,0 +1,41 @@
+Testing pcg32_fast
+	0..4294967295 is range of generator
+	198893 outputs to scan for duplicates [3.03485*sqrt(range)]
+	4.60521 duplicates expected on average
+	0.00999963 is probability of zero duplicates
+	0xd89e68a2 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated bloomish filter with 16384 64-bit elements (3 bits/entry)
+    - allocated possible-match log with 8192 32-bit elements
+  - Allocating memory completed (2.093e-05 seconds)
+  - Phase 1, Gathering repeat candidates started...
+    - 5663 repeat candidates found
+  - Phase 1, Gathering repeat candidates completed (0.00508239 seconds)
+  - Reallocating memory started...
+    - Deallocated bloomish filter
+    - Allocated hash table of the same size
+  - Reallocating memory completed (1.887e-05 seconds)
+  - Phase 2, Storing candidates in hash table started...
+  - Phase 2, Storing candidates in hash table completed (8.5056e-05 seconds)
+  - Phase 3, Testing candidates started...
+    - repeat of 2647889498 found, step 143152
+    - repeat of 2211883194 found, step 156391
+    - repeat of 2142800189 found, step 186725
+    - repeat of 790084118 found, step 198138
+  - Phase 3, Testing candidates completed (0.00480532 seconds)
+- Testing for repeats completed (0.0100381 seconds)
+---
+4 repeats, p-value = 1 - 0.487742
+
+Memory usage summary: heap total: 318465, heap peak: 236544, stack peak: 5664
+         total calls   total memory   failed calls
+ malloc|          5         318465              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          4         245761
+Histogram for block sizes:
+16384-16399           1  20% ================
+32768-32783           1  20% ================
+   large              3  60% ==================================================

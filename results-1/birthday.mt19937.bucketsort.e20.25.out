@@ -1,0 +1,49 @@
+Testing std::mt19937
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0xd32321e3 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated 256 buckets of capacity 2023
+    - allocated 256 bucket counters
+  - Allocating memory completed (2.016e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.00715531 seconds)
+  - Sorting started...
+  - Sorting completed (0.0359963 seconds)
+  - Scanning for duplicates started...
+    - repeat of 1353122063 found
+    - repeat of 314119205 found
+    - repeat of 3228408869 found
+    - repeat of 793682474 found
+    - repeat of 2110496827 found
+    - repeat of 2831965529 found
+    - repeat of 154733146 found
+    - repeat of 330144861 found
+    - repeat of 3061761652 found
+    - repeat of 3278125443 found
+    - repeat of 310260613 found
+    - repeat of 1985856925 found
+    - repeat of 1381472170 found
+    - repeat of 3324714184 found
+    - repeat of 1737838287 found
+    - repeat of 1433111761 found
+    - repeat of 4151995364 found
+    - repeat of 231644913 found
+  - Scanning for duplicates completed (0.000692328 seconds)
+- Testing for repeats completed (0.043887 seconds)
+---
+18 repeats, p-value = 0.381414
+
+Memory usage summary: heap total: 4217856, heap peak: 4217856, stack peak: 10576
+         total calls   total memory   failed calls
+ malloc|          3        4217856              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+ 2048-2063            1  33% =========================
+   large              2  66% ==================================================

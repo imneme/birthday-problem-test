@@ -1,0 +1,55 @@
+Testing jsf64
+	0..18446744073709551615 is range of generator
+	27163758263 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20 duplicates expected on average
+	2.06115e-09 is probability of zero duplicates
+	0xd3e182bc is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated 65536 buckets of capacity 518107
+    - allocated 65536 bucket counters
+  - Allocating memory completed (0.000484519 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (1499.8 seconds)
+  - Sorting started...
+  - Sorting completed (2315.43 seconds)
+  - Scanning for duplicates started...
+    - repeat of 16692371633901863902 found
+    - repeat of 12168554143034247590 found
+    - repeat of 8975172185539025938 found
+    - repeat of 5133623654671591614 found
+    - repeat of 174813531065888296 found
+    - repeat of 1742724633408977568 found
+    - repeat of 14725805064389870635 found
+    - repeat of 9619711761750967761 found
+    - repeat of 11422584476164248792 found
+    - repeat of 4877281125504735571 found
+    - repeat of 16441090500931840693 found
+    - repeat of 17920902442691097510 found
+    - repeat of 3557487638323499499 found
+    - repeat of 10909909837806146882 found
+    - repeat of 11812540026231231903 found
+    - repeat of 14101747407167461528 found
+    - repeat of 17757062682030023267 found
+    - repeat of 9400936690218485911 found
+    - repeat of 5173000905413478924 found
+    - repeat of 6438925957676323494 found
+    - repeat of 15143318377341247331 found
+    - repeat of 1223603390183434019 found
+    - repeat of 5140725048862239459 found
+    - repeat of 8537650385985793849 found
+    - repeat of 13508540082523338891 found
+  - Scanning for duplicates completed (40.1675 seconds)
+- Testing for repeats completed (3855.4 seconds)
+---
+25 repeats, p-value = 1 - 0.112185
+
+Memory usage summary: heap total: 271637879808, heap peak: 271637879808, stack peak: 5616
+         total calls   total memory   failed calls
+ malloc|          3   271637879808              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+   large              3 100% ==================================================

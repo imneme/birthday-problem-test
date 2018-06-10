@@ -1,0 +1,49 @@
+Testing sfc32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0xd3210f58 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated 256 buckets of capacity 2023
+    - allocated 256 bucket counters
+  - Allocating memory completed (9.963e-06 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.0016614 seconds)
+  - Sorting started...
+  - Sorting completed (0.0206828 seconds)
+  - Scanning for duplicates started...
+    - repeat of 1538727176 found
+    - repeat of 2731390479 found
+    - repeat of 439806502 found
+    - repeat of 2397959985 found
+    - repeat of 609228087 found
+    - repeat of 3012376656 found
+    - repeat of 4048217179 found
+    - repeat of 1181992830 found
+    - repeat of 684695684 found
+    - repeat of 2953895827 found
+    - repeat of 2253165238 found
+    - repeat of 4208939702 found
+    - repeat of 1395125712 found
+    - repeat of 2581614548 found
+    - repeat of 2058901731 found
+    - repeat of 3597382376 found
+    - repeat of 3220519406 found
+    - repeat of 2775984636 found
+  - Scanning for duplicates completed (0.000361255 seconds)
+- Testing for repeats completed (0.0227235 seconds)
+---
+18 repeats, p-value = 0.381414
+
+Memory usage summary: heap total: 2145280, heap peak: 2145280, stack peak: 5616
+         total calls   total memory   failed calls
+ malloc|          3        2145280              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+ 1024-1039            1  33% =========================
+   large              2  66% ==================================================

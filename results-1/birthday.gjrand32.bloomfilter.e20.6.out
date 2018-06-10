@@ -1,0 +1,54 @@
+Testing gjrand32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0x9812a92d is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated bloomish filter with 32768 64-bit elements (3 bits/entry)
+    - allocated possible-match log with 16384 32-bit elements
+  - Allocating memory completed (1.3716e-05 seconds)
+  - Phase 1, Gathering repeat candidates started...
+    - 15303 repeat candidates found
+  - Phase 1, Gathering repeat candidates completed (0.00663296 seconds)
+  - Reallocating memory started...
+    - Deallocated bloomish filter
+    - Allocated hash table of the same size
+  - Reallocating memory completed (9.3387e-05 seconds)
+  - Phase 2, Storing candidates in hash table started...
+  - Phase 2, Storing candidates in hash table completed (0.000159583 seconds)
+  - Phase 3, Testing candidates started...
+    - repeat of 3862225309 found, step 18953
+    - repeat of 4183512700 found, step 48508
+    - repeat of 2517149915 found, step 70911
+    - repeat of 3009577970 found, step 77281
+    - repeat of 2705810591 found, step 80961
+    - repeat of 4125433956 found, step 127780
+    - repeat of 3733200013 found, step 141142
+    - repeat of 695395845 found, step 192020
+    - repeat of 2932536945 found, step 220812
+    - repeat of 1282705452 found, step 227895
+    - repeat of 1441473772 found, step 263400
+    - repeat of 216677854 found, step 267955
+    - repeat of 1197807569 found, step 271541
+    - repeat of 2580413410 found, step 278493
+    - repeat of 2341880479 found, step 349558
+    - repeat of 3323870460 found, step 365229
+    - repeat of 4145204066 found, step 370604
+    - repeat of 1475882734 found, step 384965
+  - Phase 3, Testing candidates completed (0.00802091 seconds)
+- Testing for repeats completed (0.0149368 seconds)
+---
+18 repeats, p-value = 0.381414
+
+Memory usage summary: heap total: 564225, heap peak: 400384, stack peak: 5712
+         total calls   total memory   failed calls
+ malloc|          5         564225              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          4         491521
+Histogram for block sizes:
+32768-32783           1  20% ============
+   large              4  80% ==================================================

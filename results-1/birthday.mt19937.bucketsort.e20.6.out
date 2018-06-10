@@ -1,0 +1,54 @@
+Testing std::mt19937
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0x37c52b56 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated 256 buckets of capacity 2023
+    - allocated 256 bucket counters
+  - Allocating memory completed (1.0509e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.0042636 seconds)
+  - Sorting started...
+  - Sorting completed (0.0206202 seconds)
+  - Scanning for duplicates started...
+    - repeat of 914196743 found
+    - repeat of 3756813575 found
+    - repeat of 3847224847 found
+    - repeat of 1070977553 found
+    - repeat of 4196811540 found
+    - repeat of 766200599 found
+    - repeat of 1638696986 found
+    - repeat of 264946989 found
+    - repeat of 1540559942 found
+    - repeat of 4072909652 found
+    - repeat of 3439824238 found
+    - repeat of 157562995 found
+    - repeat of 1355630972 found
+    - repeat of 1927172496 found
+    - repeat of 3989658787 found
+    - repeat of 3194964646 found
+    - repeat of 579124661 found
+    - repeat of 2751100602 found
+    - repeat of 2698209728 found
+    - repeat of 3115682243 found
+    - repeat of 3397218249 found
+    - repeat of 214181618 found
+    - repeat of 743966198 found
+  - Scanning for duplicates completed (0.000512365 seconds)
+- Testing for repeats completed (0.0254277 seconds)
+---
+23 repeats, p-value = 1 - 0.212513
+
+Memory usage summary: heap total: 4217856, heap peak: 4217856, stack peak: 10576
+         total calls   total memory   failed calls
+ malloc|          3        4217856              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+ 2048-2063            1  33% =========================
+   large              2  66% ==================================================

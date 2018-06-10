@@ -1,0 +1,178 @@
+Testing divided_rng<regularized_rng<std::minstd_rand,uint32_t>,3>
+	0..715827881 is range of generator
+	535100 outputs to scan for duplicates [20*sqrt(range)]
+	199.95 duplicates expected on average
+	0 is probability of zero duplicates
+	0x2081d990 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated array of size 535100.
+  - Allocating memory completed (1.1637e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.00783988 seconds)
+  - Sorting started...
+  - Sorting completed (0.0525327 seconds)
+  - Scanning for duplicates started...
+    - repeat of 2366819 found
+    - repeat of 5830054 found
+    - repeat of 14150441 found
+    - repeat of 15703569 found
+    - repeat of 24028248 found
+    - repeat of 28740478 found
+    - repeat of 30312477 found
+    - repeat of 35480133 found
+    - repeat of 40002346 found
+    - repeat of 48358775 found
+    - repeat of 49439008 found
+    - repeat of 55661087 found
+    - repeat of 58394063 found
+    - repeat of 70297224 found
+    - repeat of 80202082 found
+    - repeat of 80583285 found
+    - repeat of 82262362 found
+    - repeat of 83150173 found
+    - repeat of 84214829 found
+    - repeat of 88653968 found
+    - repeat of 91336865 found
+    - repeat of 99200792 found
+    - repeat of 108087976 found
+    - repeat of 114268818 found
+    - repeat of 114929971 found
+    - repeat of 120179793 found
+    - repeat of 120953420 found
+    - repeat of 125165015 found
+    - repeat of 125235591 found
+    - repeat of 128546833 found
+    - repeat of 131306430 found
+    - repeat of 141463264 found
+    - repeat of 147415271 found
+    - repeat of 150375243 found
+    - repeat of 158261894 found
+    - repeat of 159250035 found
+    - repeat of 159308387 found
+    - repeat of 163131631 found
+    - repeat of 163582080 found
+    - repeat of 167396875 found
+    - repeat of 176886062 found
+    - repeat of 177689344 found
+    - repeat of 180574771 found
+    - repeat of 183527099 found
+    - repeat of 185002464 found
+    - repeat of 185569029 found
+    - repeat of 202665131 found
+    - repeat of 209759166 found
+    - repeat of 210907699 found
+    - repeat of 218894549 found
+    - repeat of 219798404 found
+    - repeat of 220105251 found
+    - repeat of 229572630 found
+    - repeat of 232250781 found
+    - repeat of 236787787 found
+    - repeat of 238008211 found
+    - repeat of 238271196 found
+    - repeat of 241950914 found
+    - repeat of 242033547 found
+    - repeat of 242348928 found
+    - repeat of 249946445 found
+    - repeat of 250996696 found
+    - repeat of 252283091 found
+    - repeat of 265564101 found
+    - repeat of 266764665 found
+    - repeat of 266770657 found
+    - repeat of 277774009 found
+    - repeat of 281318405 found
+    - repeat of 286190286 found
+    - repeat of 286361163 found
+    - repeat of 295694815 found
+    - repeat of 296133715 found
+    - repeat of 302675055 found
+    - repeat of 303241245 found
+    - repeat of 303591718 found
+    - repeat of 309172230 found
+    - repeat of 312986309 found
+    - repeat of 314961358 found
+    - repeat of 318281334 found
+    - repeat of 328885438 found
+    - repeat of 332074201 found
+    - repeat of 344931336 found
+    - repeat of 348247200 found
+    - repeat of 350661739 found
+    - repeat of 361043305 found
+    - repeat of 370117004 found
+    - repeat of 370823552 found
+    - repeat of 373458401 found
+    - repeat of 383425216 found
+    - repeat of 385047419 found
+    - repeat of 390726153 found
+    - repeat of 391859095 found
+    - repeat of 398974949 found
+    - repeat of 400817103 found
+    - repeat of 403344118 found
+    - repeat of 404829907 found
+    - repeat of 407143042 found
+    - repeat of 418108850 found
+    - repeat of 432585468 found
+    - repeat of 432811881 found
+    - repeat of 434401876 found
+    - repeat of 441711603 found
+    - repeat of 443351979 found
+    - repeat of 446153143 found
+    - repeat of 447699125 found
+    - repeat of 449389084 found
+    - repeat of 450728595 found
+    - repeat of 450863461 found
+    - repeat of 455835846 found
+    - repeat of 456300793 found
+    - repeat of 465386158 found
+    - repeat of 472439413 found
+    - repeat of 478880115 found
+    - repeat of 483334839 found
+    - repeat of 488282171 found
+    - repeat of 494126094 found
+    - repeat of 494371179 found
+    - repeat of 497878379 found
+    - repeat of 505157081 found
+    - repeat of 515013224 found
+    - repeat of 522543838 found
+    - repeat of 534380198 found
+    - repeat of 543385837 found
+    - repeat of 545124876 found
+    - repeat of 549942109 found
+    - repeat of 559499315 found
+    - repeat of 559572205 found
+    - repeat of 559865099 found
+    - repeat of 577552685 found
+    - repeat of 593961456 found
+    - repeat of 607228630 found
+    - repeat of 609696827 found
+    - repeat of 626651327 found
+    - repeat of 637273011 found
+    - repeat of 641775502 found
+    - repeat of 646478718 found
+    - repeat of 647763081 found
+    - repeat of 648859776 found
+    - repeat of 652259878 found
+    - repeat of 655002103 found
+    - repeat of 655738159 found
+    - repeat of 657310104 found
+    - repeat of 672137473 found
+    - repeat of 680056376 found
+    - repeat of 681030988 found
+    - repeat of 692911242 found
+    - repeat of 696873717 found
+    - repeat of 709500368 found
+    - repeat of 711729760 found
+  - Scanning for duplicates completed (0.000590624 seconds)
+- Testing for repeats completed (0.0610035 seconds)
+---
+149 repeats, p-value = 9.80804e-05
+
+Memory usage summary: heap total: 2213104, heap peak: 2213104, stack peak: 5568
+         total calls   total memory   failed calls
+ malloc|          2        2213104              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+   large              2 100% ==================================================

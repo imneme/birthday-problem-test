@@ -1,0 +1,41 @@
+Testing mcg128
+	0..18446744073709551615 is range of generator
+	13034599790 outputs to scan for duplicates [3.03485*sqrt(range)]
+	4.60517 duplicates expected on average
+	0.01 is probability of zero duplicates
+	0x1c19410c is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated bloomish filter with 1073741824 64-bit elements (3 bits/entry)
+    - allocated possible-match log with 536870912 64-bit elements
+  - Allocating memory completed (2.7453e-05 seconds)
+  - Phase 1, Gathering repeat candidates started...
+    - 362444064 repeat candidates found
+  - Phase 1, Gathering repeat candidates completed (779.579 seconds)
+  - Reallocating memory started...
+    - Deallocated bloomish filter
+    - Allocated hash table of the same size
+  - Reallocating memory completed (3.16868 seconds)
+  - Phase 2, Storing candidates in hash table started...
+  - Phase 2, Storing candidates in hash table completed (10.2664 seconds)
+  - Phase 3, Testing candidates started...
+    - repeat of 7599582893798853562 found, step 6512823418
+    - repeat of 16842864188901661462 found, step 8826105715
+    - repeat of 1223548981777299883 found, step 10519228985
+    - repeat of 2029348389642847551 found, step 11423196682
+    - repeat of 3594760346520876988 found, step 12558417918
+    - repeat of 14786092427347805613 found, step 12876915039
+  - Phase 3, Testing candidates completed (468.313 seconds)
+- Testing for repeats completed (1261.33 seconds)
+---
+6 repeats, p-value = 1 - 0.182655
+
+Memory usage summary: heap total: 22548651009, heap peak: 13958716417, stack peak: 5664
+         total calls   total memory   failed calls
+ malloc|          5    22548651009              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          4    22548578305
+Histogram for block sizes:
+   large              5 100% ==================================================

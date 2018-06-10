@@ -1,0 +1,53 @@
+Testing std::mt19937
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0x94da9210 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated array of size 414487.
+  - Allocating memory completed (1.3619e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.00429934 seconds)
+  - Sorting started...
+  - Sorting completed (0.0591129 seconds)
+  - Scanning for duplicates started...
+    - repeat of 96362671 found
+    - repeat of 358618644 found
+    - repeat of 424689842 found
+    - repeat of 811106487 found
+    - repeat of 959628883 found
+    - repeat of 1082035106 found
+    - repeat of 1153574818 found
+    - repeat of 1302347438 found
+    - repeat of 1391678197 found
+    - repeat of 1425560949 found
+    - repeat of 1574597579 found
+    - repeat of 1700415639 found
+    - repeat of 1785031213 found
+    - repeat of 1845354156 found
+    - repeat of 1919359709 found
+    - repeat of 2191488500 found
+    - repeat of 2297085320 found
+    - repeat of 2693450984 found
+    - repeat of 2829395705 found
+    - repeat of 2934834014 found
+    - repeat of 3364130250 found
+    - repeat of 4051051631 found
+    - repeat of 4266667095 found
+    - repeat of 4270612918 found
+  - Scanning for duplicates completed (0.000504655 seconds)
+- Testing for repeats completed (0.0639558 seconds)
+---
+24 repeats, p-value = 1 - 0.156778
+
+Memory usage summary: heap total: 3388600, heap peak: 3388600, stack peak: 10528
+         total calls   total memory   failed calls
+ malloc|          2        3388600              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+   large              2 100% ==================================================

@@ -1,0 +1,29 @@
+Testing SplitMix64
+	0..18446744073709551615 is range of generator
+	13034599790 outputs to scan for duplicates [3.03485*sqrt(range)]
+	4.60517 duplicates expected on average
+	0.01 is probability of zero duplicates
+	0xe583094c is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated array of size 13034599790.
+  - Allocating memory completed (2.0717e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (50.109 seconds)
+  - Sorting started...
+  - Sorting completed (1790.25 seconds)
+  - Scanning for duplicates started...
+  - Scanning for duplicates completed (14.8036 seconds)
+- Testing for repeats completed (1855.17 seconds)
+---
+0 repeats, p-value = 0.01
+
+Memory usage summary: heap total: 104276871024, heap peak: 104276871024, stack peak: 5568
+         total calls   total memory   failed calls
+ malloc|          2   104276871024              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+   large              2 100% ==================================================

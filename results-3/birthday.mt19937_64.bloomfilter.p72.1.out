@@ -1,0 +1,28 @@
+Testing std::mt19937_64
+	0..18446744073709551615 is range of generator
+	6901370125 outputs to scan for duplicates [1.60685*sqrt(range)]
+	1.29098 duplicates expected on average
+	0.275 is probability of zero duplicates
+	0x99fa6529 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated bloomish filter with 536870912 64-bit elements (3 bits/entry)
+    - allocated possible-match log with 268435456 64-bit elements
+  - Allocating memory completed (2.1e-05 seconds)
+  - Phase 1, Gathering repeat candidates started...
+    - 217596305 repeat candidates found
+  - Phase 1, Gathering repeat candidates completed (368.616 seconds)
+  - Reallocating memory started...
+    - Deallocated bloomish filter
+    - Allocated hash table of the same size
+  - Reallocating memory completed (2.38716 seconds)
+  - Phase 2, Storing candidates in hash table started...
+  - Phase 2, Storing candidates in hash table completed (6.6863 seconds)
+  - Phase 3, Testing candidates started...
+    - repeat of 18308129248216961672 found, step 2957510561
+    - repeat of 13364200468200531356 found, step 6735384909
+  - Phase 3, Testing candidates completed (314.16 seconds)
+- Testing for repeats completed (691.85 seconds)
+---
+2 repeats, p-value = 1 - 0.140816

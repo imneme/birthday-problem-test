@@ -1,0 +1,41 @@
+Testing std::mt19937
+	0..4294967295 is range of generator
+	198893 outputs to scan for duplicates [3.03485*sqrt(range)]
+	4.60521 duplicates expected on average
+	0.00999963 is probability of zero duplicates
+	0x62cb6e6c is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated bloomish filter with 16384 64-bit elements (3 bits/entry)
+    - allocated possible-match log with 8192 64-bit elements
+  - Allocating memory completed (2.1006e-05 seconds)
+  - Phase 1, Gathering repeat candidates started...
+    - 5711 repeat candidates found
+  - Phase 1, Gathering repeat candidates completed (0.00612008 seconds)
+  - Reallocating memory started...
+    - Deallocated bloomish filter
+    - Allocated hash table of the same size
+  - Reallocating memory completed (0.000132955 seconds)
+  - Phase 2, Storing candidates in hash table started...
+  - Phase 2, Storing candidates in hash table completed (8.6443e-05 seconds)
+  - Phase 3, Testing candidates started...
+    - repeat of 3612886437 found, step 76764
+    - repeat of 190774526 found, step 106463
+    - repeat of 647629059 found, step 149627
+    - repeat of 3163393972 found, step 152730
+    - repeat of 2056581197 found, step 171420
+  - Phase 3, Testing candidates completed (0.00699568 seconds)
+- Testing for repeats completed (0.0133905 seconds)
+---
+5 repeats, p-value = 1 - 0.315139
+
+Memory usage summary: heap total: 416769, heap peak: 285697, stack peak: 15616
+         total calls   total memory   failed calls
+ malloc|          5         416769              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          4         344065
+Histogram for block sizes:
+16384-16399           1  20% ============
+   large              4  80% ==================================================

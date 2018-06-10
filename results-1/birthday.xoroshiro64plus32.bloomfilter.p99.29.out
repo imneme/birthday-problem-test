@@ -1,0 +1,45 @@
+Testing xoroshiro64plus32
+	0..4294967295 is range of generator
+	198893 outputs to scan for duplicates [3.03485*sqrt(range)]
+	4.60521 duplicates expected on average
+	0.00999963 is probability of zero duplicates
+	0xc8e16136 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated bloomish filter with 16384 64-bit elements (3 bits/entry)
+    - allocated possible-match log with 8192 32-bit elements
+  - Allocating memory completed (2.0886e-05 seconds)
+  - Phase 1, Gathering repeat candidates started...
+    - 5642 repeat candidates found
+  - Phase 1, Gathering repeat candidates completed (0.00498315 seconds)
+  - Reallocating memory started...
+    - Deallocated bloomish filter
+    - Allocated hash table of the same size
+  - Reallocating memory completed (1.726e-05 seconds)
+  - Phase 2, Storing candidates in hash table started...
+  - Phase 2, Storing candidates in hash table completed (8.5142e-05 seconds)
+  - Phase 3, Testing candidates started...
+    - repeat of 3749465287 found, step 24462
+    - repeat of 3528089537 found, step 58054
+    - repeat of 3201698498 found, step 135188
+    - repeat of 3962032147 found, step 140746
+    - repeat of 4050254324 found, step 170590
+    - repeat of 1608231257 found, step 171020
+    - repeat of 315374286 found, step 177463
+    - repeat of 2460905180 found, step 185738
+  - Phase 3, Testing candidates completed (0.00459251 seconds)
+- Testing for repeats completed (0.00972339 seconds)
+---
+8 repeats, p-value = 1 - 0.0453327
+
+Memory usage summary: heap total: 318465, heap peak: 236544, stack peak: 5680
+         total calls   total memory   failed calls
+ malloc|          5         318465              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          4         245761
+Histogram for block sizes:
+16384-16399           1  20% ================
+32768-32783           1  20% ================
+   large              3  60% ==================================================

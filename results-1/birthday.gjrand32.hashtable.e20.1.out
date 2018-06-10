@@ -1,0 +1,42 @@
+Testing gjrand32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0xec726f76 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated hash table of reserved for 414487 elements
+  - Allocating memory completed (0.00209032 seconds)
+  - Checking PRNG output started...
+    - repeat of 515655054 found, step 9800
+    - repeat of 1616106781 found, step 29191
+    - repeat of 3053273096 found, step 201068
+    - repeat of 2277951526 found, step 225159
+    - repeat of 2756276096 found, step 225491
+    - repeat of 364151536 found, step 237276
+    - repeat of 3857752876 found, step 256101
+    - repeat of 4134624467 found, step 268361
+    - repeat of 3566479357 found, step 292807
+    - repeat of 3127562731 found, step 306879
+    - repeat of 488606343 found, step 308345
+    - repeat of 1288905529 found, step 317385
+    - repeat of 1870801273 found, step 373035
+    - repeat of 894859913 found, step 393661
+    - repeat of 251898477 found, step 399455
+    - repeat of 1873705198 found, step 406830
+  - Checking PRNG output completed (0.0927922 seconds)
+- Testing for repeats completed (0.0948957 seconds)
+---
+16 repeats, p-value = 0.221068
+
+Memory usage summary: heap total: 10260136, heap peak: 10260136, stack peak: 5648
+         total calls   total memory   failed calls
+ malloc|     414473       10260136              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|     414472       10187432
+Histogram for block sizes:
+   16-31         414471  99% ==================================================
+   large              2  <1% 

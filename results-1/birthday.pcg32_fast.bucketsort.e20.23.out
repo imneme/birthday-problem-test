@@ -1,0 +1,60 @@
+Testing pcg32_fast
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0xf2ffe782 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated 256 buckets of capacity 2023
+    - allocated 256 bucket counters
+  - Allocating memory completed (1.3244e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.00277481 seconds)
+  - Sorting started...
+  - Sorting completed (0.0263013 seconds)
+  - Scanning for duplicates started...
+    - repeat of 2509000195 found
+    - repeat of 2068873736 found
+    - repeat of 2542398984 found
+    - repeat of 1121630735 found
+    - repeat of 1471851806 found
+    - repeat of 602546207 found
+    - repeat of 2544726305 found
+    - repeat of 672170530 found
+    - repeat of 143324710 found
+    - repeat of 516397606 found
+    - repeat of 688914472 found
+    - repeat of 1047740724 found
+    - repeat of 4058233654 found
+    - repeat of 1882962745 found
+    - repeat of 3420710742 found
+    - repeat of 1783923546 found
+    - repeat of 3632811612 found
+    - repeat of 76222313 found
+    - repeat of 1452445039 found
+    - repeat of 2342355313 found
+    - repeat of 1351294071 found
+    - repeat of 3394752146 found
+    - repeat of 3747877280 found
+    - repeat of 37984682 found
+    - repeat of 4226764466 found
+    - repeat of 3940383446 found
+    - repeat of 987487460 found
+    - repeat of 571106285 found
+    - repeat of 1775857657 found
+  - Scanning for duplicates completed (0.000453076 seconds)
+- Testing for repeats completed (0.0295621 seconds)
+---
+29 repeats, p-value = 1 - 0.0218194
+
+Memory usage summary: heap total: 2145280, heap peak: 2145280, stack peak: 5616
+         total calls   total memory   failed calls
+ malloc|          3        2145280              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+ 1024-1039            1  33% =========================
+   large              2  66% ==================================================

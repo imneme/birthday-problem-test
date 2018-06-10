@@ -1,0 +1,56 @@
+Testing pcg32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0x85faa3df is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated 256 buckets of capacity 2023
+    - allocated 256 bucket counters
+  - Allocating memory completed (1.6474e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.00359143 seconds)
+  - Sorting started...
+  - Sorting completed (0.0370678 seconds)
+  - Scanning for duplicates started...
+    - repeat of 1518730497 found
+    - repeat of 2914804998 found
+    - repeat of 4230050056 found
+    - repeat of 1367589648 found
+    - repeat of 3984307486 found
+    - repeat of 918345764 found
+    - repeat of 2117658674 found
+    - repeat of 1437641525 found
+    - repeat of 2071343931 found
+    - repeat of 108756035 found
+    - repeat of 1715919196 found
+    - repeat of 1634130269 found
+    - repeat of 2410382953 found
+    - repeat of 1068852594 found
+    - repeat of 839359352 found
+    - repeat of 558650252 found
+    - repeat of 4244219809 found
+    - repeat of 792588967 found
+    - repeat of 461199538 found
+    - repeat of 220587706 found
+    - repeat of 1597532094 found
+    - repeat of 2701918156 found
+    - repeat of 2119590615 found
+    - repeat of 1061884126 found
+    - repeat of 3145533937 found
+  - Scanning for duplicates completed (0.000571659 seconds)
+- Testing for repeats completed (0.0412625 seconds)
+---
+25 repeats, p-value = 1 - 0.112189
+
+Memory usage summary: heap total: 2145280, heap peak: 2145280, stack peak: 5616
+         total calls   total memory   failed calls
+ malloc|          3        2145280              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+ 1024-1039            1  33% =========================
+   large              2  66% ==================================================

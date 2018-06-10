@@ -1,0 +1,54 @@
+Testing xoroshiro64star32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0x1464c4c4 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated 256 buckets of capacity 2023
+    - allocated 256 bucket counters
+  - Allocating memory completed (1.851e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.00340904 seconds)
+  - Sorting started...
+  - Sorting completed (0.0366626 seconds)
+  - Scanning for duplicates started...
+    - repeat of 1097812239 found
+    - repeat of 3295346967 found
+    - repeat of 3935035163 found
+    - repeat of 693057070 found
+    - repeat of 3042568242 found
+    - repeat of 2790116917 found
+    - repeat of 2635103031 found
+    - repeat of 1814482493 found
+    - repeat of 3813749832 found
+    - repeat of 161153875 found
+    - repeat of 3097741662 found
+    - repeat of 413251680 found
+    - repeat of 1663230053 found
+    - repeat of 2551370090 found
+    - repeat of 2106623868 found
+    - repeat of 2869231752 found
+    - repeat of 2402991247 found
+    - repeat of 3869481402 found
+    - repeat of 729250023 found
+    - repeat of 4081409515 found
+    - repeat of 3363299308 found
+    - repeat of 2587142639 found
+    - repeat of 336900848 found
+  - Scanning for duplicates completed (0.000618041 seconds)
+- Testing for repeats completed (0.0407316 seconds)
+---
+23 repeats, p-value = 1 - 0.212513
+
+Memory usage summary: heap total: 2145280, heap peak: 2145280, stack peak: 5616
+         total calls   total memory   failed calls
+ malloc|          3        2145280              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+ 1024-1039            1  33% =========================
+   large              2  66% ==================================================

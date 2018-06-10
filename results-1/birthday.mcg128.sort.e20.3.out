@@ -1,0 +1,52 @@
+Testing mcg128
+	0..18446744073709551615 is range of generator
+	27163758263 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20 duplicates expected on average
+	2.06115e-09 is probability of zero duplicates
+	0xee366959 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated array of size 27163758263.
+  - Allocating memory completed (1.0631e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (112.902 seconds)
+  - Sorting started...
+  - Sorting completed (4298.23 seconds)
+  - Scanning for duplicates started...
+    - repeat of 233812541467597516 found
+    - repeat of 582991025445387592 found
+    - repeat of 1025503175110143892 found
+    - repeat of 1068345603522170789 found
+    - repeat of 2243041140521998728 found
+    - repeat of 2694840038571652146 found
+    - repeat of 3410283752102473512 found
+    - repeat of 4451696973374641300 found
+    - repeat of 4835675753501913898 found
+    - repeat of 5023687722968402844 found
+    - repeat of 5366951051313327517 found
+    - repeat of 6094399284830419353 found
+    - repeat of 6659012006036313229 found
+    - repeat of 9540034776480231859 found
+    - repeat of 11703866283995811712 found
+    - repeat of 12971525775511386165 found
+    - repeat of 13390916220901983039 found
+    - repeat of 13476299025585623834 found
+    - repeat of 13563120282317978944 found
+    - repeat of 13576932129760557032 found
+    - repeat of 14178986571233702136 found
+    - repeat of 15143555218469955283 found
+    - repeat of 15226430596517698560 found
+  - Scanning for duplicates completed (38.0371 seconds)
+- Testing for repeats completed (4449.17 seconds)
+---
+23 repeats, p-value = 1 - 0.212507
+
+Memory usage summary: heap total: 217310138808, heap peak: 217310138808, stack peak: 5600
+         total calls   total memory   failed calls
+ malloc|          2   217310138808              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+   large              2 100% ==================================================

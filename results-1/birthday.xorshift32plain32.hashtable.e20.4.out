@@ -1,0 +1,26 @@
+Testing xorshift32plain32a
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	19.9994 duplicates expected on average
+	2.06239e-09 is probability of zero duplicates
+	0x545189a7 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated hash table of reserved for 414487 elements
+  - Allocating memory completed (0.00303427 seconds)
+  - Checking PRNG output started...
+  - Checking PRNG output completed (0.107748 seconds)
+- Testing for repeats completed (0.110805 seconds)
+---
+0 repeats, p-value = 2.06239e-09
+
+Memory usage summary: heap total: 10260392, heap peak: 10260392, stack peak: 5648
+         total calls   total memory   failed calls
+ malloc|     414489       10260392              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|     414488       10187688
+Histogram for block sizes:
+   16-31         414487  99% ==================================================
+   large              2  <1% 

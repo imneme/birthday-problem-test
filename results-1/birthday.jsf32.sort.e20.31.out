@@ -1,0 +1,55 @@
+Testing jsf32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0x400a10c5 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated array of size 414487.
+  - Allocating memory completed (5.39e-06 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.00128777 seconds)
+  - Sorting started...
+  - Sorting completed (0.0350746 seconds)
+  - Scanning for duplicates started...
+    - repeat of 86702333 found
+    - repeat of 142256172 found
+    - repeat of 497609250 found
+    - repeat of 508315689 found
+    - repeat of 547521518 found
+    - repeat of 614469642 found
+    - repeat of 615601253 found
+    - repeat of 682274127 found
+    - repeat of 1146447941 found
+    - repeat of 1468351829 found
+    - repeat of 1554074693 found
+    - repeat of 1621342001 found
+    - repeat of 1642681766 found
+    - repeat of 1694588134 found
+    - repeat of 1927146535 found
+    - repeat of 2106141673 found
+    - repeat of 2355051023 found
+    - repeat of 2392096783 found
+    - repeat of 2801104396 found
+    - repeat of 2896899103 found
+    - repeat of 2980040472 found
+    - repeat of 3181288400 found
+    - repeat of 3266513353 found
+    - repeat of 3270714254 found
+    - repeat of 3925715252 found
+    - repeat of 3957438255 found
+  - Scanning for duplicates completed (0.00035075 seconds)
+- Testing for repeats completed (0.0367279 seconds)
+---
+26 repeats, p-value = 1 - 0.0778899
+
+Memory usage summary: heap total: 1730652, heap peak: 1730652, stack peak: 5568
+         total calls   total memory   failed calls
+ malloc|          2        1730652              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+   large              2 100% ==================================================

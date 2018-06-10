@@ -1,0 +1,44 @@
+Testing jsf32
+	0..4294967295 is range of generator
+	198893 outputs to scan for duplicates [3.03485*sqrt(range)]
+	4.60521 duplicates expected on average
+	0.00999963 is probability of zero duplicates
+	0x6ddf35ef is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated bloomish filter with 16384 64-bit elements (3 bits/entry)
+    - allocated possible-match log with 8192 32-bit elements
+  - Allocating memory completed (1.5583e-05 seconds)
+  - Phase 1, Gathering repeat candidates started...
+    - 5747 repeat candidates found
+  - Phase 1, Gathering repeat candidates completed (0.00329586 seconds)
+  - Reallocating memory started...
+    - Deallocated bloomish filter
+    - Allocated hash table of the same size
+  - Reallocating memory completed (1.2e-05 seconds)
+  - Phase 2, Storing candidates in hash table started...
+  - Phase 2, Storing candidates in hash table completed (6.0267e-05 seconds)
+  - Phase 3, Testing candidates started...
+    - repeat of 3027482494 found, step 99016
+    - repeat of 2492453869 found, step 100648
+    - repeat of 1259998645 found, step 106779
+    - repeat of 3537691834 found, step 107541
+    - repeat of 1223189234 found, step 152229
+    - repeat of 4257214681 found, step 163592
+    - repeat of 4007612608 found, step 176757
+  - Phase 3, Testing candidates completed (0.0034172 seconds)
+- Testing for repeats completed (0.00683413 seconds)
+---
+7 repeats, p-value = 1 - 0.0955042
+
+Memory usage summary: heap total: 318465, heap peak: 236544, stack peak: 5712
+         total calls   total memory   failed calls
+ malloc|          5         318465              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          4         245761
+Histogram for block sizes:
+16384-16399           1  20% ================
+32768-32783           1  20% ================
+   large              3  60% ==================================================

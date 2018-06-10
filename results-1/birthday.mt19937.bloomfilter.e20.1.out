@@ -1,0 +1,47 @@
+Testing std::mt19937
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0x4fecf84 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated bloomish filter with 32768 64-bit elements (3 bits/entry)
+    - allocated possible-match log with 16384 64-bit elements
+  - Allocating memory completed (1.5997e-05 seconds)
+  - Phase 1, Gathering repeat candidates started...
+    - 15080 repeat candidates found
+  - Phase 1, Gathering repeat candidates completed (0.0128972 seconds)
+  - Reallocating memory started...
+    - Deallocated bloomish filter
+    - Allocated hash table of the same size
+  - Reallocating memory completed (0.000241705 seconds)
+  - Phase 2, Storing candidates in hash table started...
+  - Phase 2, Storing candidates in hash table completed (0.00026126 seconds)
+  - Phase 3, Testing candidates started...
+    - repeat of 3854746526 found, step 93162
+    - repeat of 2407143486 found, step 151298
+    - repeat of 2316010785 found, step 156137
+    - repeat of 2038489840 found, step 189590
+    - repeat of 1120867580 found, step 197896
+    - repeat of 1240246362 found, step 244502
+    - repeat of 929719775 found, step 253062
+    - repeat of 3324933719 found, step 308496
+    - repeat of 2563641539 found, step 370859
+    - repeat of 137047497 found, step 384791
+    - repeat of 1794611215 found, step 394403
+  - Phase 3, Testing candidates completed (0.0170938 seconds)
+- Testing for repeats completed (0.0305472 seconds)
+---
+11 repeats, p-value = 0.0213859
+
+Memory usage summary: heap total: 760833, heap peak: 498689, stack peak: 15616
+         total calls   total memory   failed calls
+ malloc|          5         760833              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          4         688129
+Histogram for block sizes:
+32768-32783           1  20% ============
+   large              4  80% ==================================================

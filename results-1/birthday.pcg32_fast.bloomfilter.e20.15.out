@@ -1,0 +1,45 @@
+Testing pcg32_fast
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0x54765216 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated bloomish filter with 32768 64-bit elements (3 bits/entry)
+    - allocated possible-match log with 16384 32-bit elements
+  - Allocating memory completed (1.5987e-05 seconds)
+  - Phase 1, Gathering repeat candidates started...
+    - 15200 repeat candidates found
+  - Phase 1, Gathering repeat candidates completed (0.00785064 seconds)
+  - Reallocating memory started...
+    - Deallocated bloomish filter
+    - Allocated hash table of the same size
+  - Reallocating memory completed (0.000103141 seconds)
+  - Phase 2, Storing candidates in hash table started...
+  - Phase 2, Storing candidates in hash table completed (0.000136921 seconds)
+  - Phase 3, Testing candidates started...
+    - repeat of 2902746901 found, step 98112
+    - repeat of 1992481673 found, step 175706
+    - repeat of 620816476 found, step 199443
+    - repeat of 311952890 found, step 331687
+    - repeat of 3242552412 found, step 338912
+    - repeat of 1477962334 found, step 356604
+    - repeat of 897067844 found, step 363408
+    - repeat of 1749990194 found, step 400071
+    - repeat of 247551963 found, step 403284
+  - Phase 3, Testing candidates completed (0.00666349 seconds)
+- Testing for repeats completed (0.0147993 seconds)
+---
+9 repeats, p-value = 0.00499515
+
+Memory usage summary: heap total: 564225, heap peak: 400384, stack peak: 5664
+         total calls   total memory   failed calls
+ malloc|          5         564225              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          4         491521
+Histogram for block sizes:
+32768-32783           1  20% ============
+   large              4  80% ==================================================

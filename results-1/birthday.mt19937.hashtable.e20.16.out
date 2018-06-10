@@ -1,0 +1,54 @@
+Testing std::mt19937
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0x426e39bf is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated hash table of reserved for 414487 elements
+  - Allocating memory completed (0.00295706 seconds)
+  - Checking PRNG output started...
+    - repeat of 1229975065 found, step 97452
+    - repeat of 2757059295 found, step 105327
+    - repeat of 3237000987 found, step 174990
+    - repeat of 3046918124 found, step 175323
+    - repeat of 1376516468 found, step 192277
+    - repeat of 3620519133 found, step 202566
+    - repeat of 2390558843 found, step 211731
+    - repeat of 2081990472 found, step 222122
+    - repeat of 1634747575 found, step 231900
+    - repeat of 3980299179 found, step 237809
+    - repeat of 2982591413 found, step 249281
+    - repeat of 3682084804 found, step 278462
+    - repeat of 2548269098 found, step 298148
+    - repeat of 3405863593 found, step 323410
+    - repeat of 3419293551 found, step 329925
+    - repeat of 1318336537 found, step 332587
+    - repeat of 1747833022 found, step 334841
+    - repeat of 2337185616 found, step 341066
+    - repeat of 1150147975 found, step 341463
+    - repeat of 1341284447 found, step 341801
+    - repeat of 1116071114 found, step 343057
+    - repeat of 2476121128 found, step 371209
+    - repeat of 4172480637 found, step 373461
+    - repeat of 3304197332 found, step 377207
+    - repeat of 558304475 found, step 379395
+    - repeat of 623643241 found, step 380216
+    - repeat of 1023682015 found, step 380629
+    - repeat of 1505883382 found, step 407090
+  - Checking PRNG output completed (0.0826287 seconds)
+- Testing for repeats completed (0.0856042 seconds)
+---
+28 repeats, p-value = 1 - 0.0343352
+
+Memory usage summary: heap total: 10259944, heap peak: 10259944, stack peak: 10608
+         total calls   total memory   failed calls
+ malloc|     414461       10259944              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|     414460       10187240
+Histogram for block sizes:
+   16-31         414459  99% ==================================================
+   large              2  <1% 

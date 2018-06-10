@@ -1,0 +1,49 @@
+Testing xoroshiro128starstar64
+	0..18446744073709551615 is range of generator
+	27163758263 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20 duplicates expected on average
+	2.06115e-09 is probability of zero duplicates
+	0x80d82bad is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated array of size 27163758263.
+  - Allocating memory completed (1.0343e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (114.427 seconds)
+  - Sorting started...
+  - Sorting completed (4302.59 seconds)
+  - Scanning for duplicates started...
+    - repeat of 1911113077961451547 found
+    - repeat of 2815865425004979804 found
+    - repeat of 3476330022320153913 found
+    - repeat of 3719138487839127219 found
+    - repeat of 4150132565497697901 found
+    - repeat of 4184641025292314880 found
+    - repeat of 4337450841976088680 found
+    - repeat of 5450560242861418054 found
+    - repeat of 9256290084660701332 found
+    - repeat of 9369565524944364624 found
+    - repeat of 9704954556874987648 found
+    - repeat of 10271428094939626570 found
+    - repeat of 11988426624095665581 found
+    - repeat of 13208498979842042174 found
+    - repeat of 15090501842408041761 found
+    - repeat of 15139991197555057229 found
+    - repeat of 15509814338471890265 found
+    - repeat of 16873525731542088328 found
+    - repeat of 17103370606416624446 found
+    - repeat of 17932374034906784083 found
+  - Scanning for duplicates completed (45.9003 seconds)
+- Testing for repeats completed (4462.91 seconds)
+---
+20 repeats, p-value = 1 - 0.440907
+
+Memory usage summary: heap total: 217310138808, heap peak: 217310138808, stack peak: 5568
+         total calls   total memory   failed calls
+ malloc|          2   217310138808              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+   large              2 100% ==================================================

@@ -1,0 +1,65 @@
+- bump_allocator_static< std::__detail::_Hash_node<unsigned int, false> > (item size = 16) at 0x6042d0 created!
+- bump_allocator_static< std::__detail::_Hash_node_base* > (item size = 8) at 0x604310 created!
+- mempool at 0x604298 allocated new chunk at 0x7f6ebd859020
+- mempool at 0x604298 deallocated chunk at 0x7f6ebd859020
+Testing xoroshiro64star32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0x292ee916 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated hash table of reserved for 414487 elements
+  - Allocating memory completed (0.00204565 seconds)
+  - Checking PRNG output started...
+    - repeat of 2365911100 found, step 108466
+    - repeat of 444190423 found, step 189471
+    - repeat of 985187311 found, step 199822
+    - repeat of 2070375374 found, step 215799
+    - repeat of 3223184199 found, step 232799
+    - repeat of 3700005809 found, step 252341
+    - repeat of 3262075967 found, step 264939
+    - repeat of 3136189937 found, step 279948
+    - repeat of 3916178329 found, step 311630
+    - repeat of 1642183987 found, step 312505
+    - repeat of 439559578 found, step 314366
+    - repeat of 767088066 found, step 320989
+    - repeat of 893760314 found, step 332930
+    - repeat of 3703915282 found, step 345872
+    - repeat of 58811879 found, step 367637
+    - repeat of 2453183119 found, step 383733
+    - repeat of 4024541081 found, step 385216
+    - repeat of 3979366834 found, step 400522
+  - Checking PRNG output completed (0.0460491 seconds)
+- Testing for repeats completed (0.0481108 seconds)
+---
+18 repeats, p-value = 0.381414
+- bump_allocator_static< std::__detail::_Hash_node_base* > at 0x604310 destroyed!
+ - total_allocations_  = 1
+ - active_allocations_ = 0
+ - high_allocations_   = 1
+ - total_mem_  = 3555896
+ - active_mem_ = 0
+ - high_mem_   = 3555896
+- bump_allocator_static< std::__detail::_Hash_node<unsigned int, false> > at 0x6042d0 destroyed!
+ - total_allocations_  = 414469
+ - active_allocations_ = 0
+ - high_allocations_   = 414469
+ - total_mem_  = 6631504
+ - active_mem_ = 0
+ - high_mem_   = 6631504
+
+Memory usage summary: heap total: 1073815760, heap peak: 1073815568, stack peak: 2816
+         total calls   total memory   failed calls
+ malloc|          5     1073815568              0
+realloc|          4            192              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          6     1073742032
+Histogram for block sizes:
+   16-31              1  11% =========================
+   32-47              2  22% ==================================================
+   64-79              2  22% ==================================================
+  512-527             2  22% ==================================================
+   large              2  22% ==================================================

@@ -1,0 +1,54 @@
+Testing pcg32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0x766072d8 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated bloomish filter with 32768 64-bit elements (3 bits/entry)
+    - allocated possible-match log with 16384 32-bit elements
+  - Allocating memory completed (1.5354e-05 seconds)
+  - Phase 1, Gathering repeat candidates started...
+    - 15284 repeat candidates found
+  - Phase 1, Gathering repeat candidates completed (0.0103023 seconds)
+  - Reallocating memory started...
+    - Deallocated bloomish filter
+    - Allocated hash table of the same size
+  - Reallocating memory completed (0.000176312 seconds)
+  - Phase 2, Storing candidates in hash table started...
+  - Phase 2, Storing candidates in hash table completed (0.000284265 seconds)
+  - Phase 3, Testing candidates started...
+    - repeat of 4181385032 found, step 53903
+    - repeat of 2730716826 found, step 123883
+    - repeat of 1567898190 found, step 154921
+    - repeat of 1685839967 found, step 166244
+    - repeat of 3790386963 found, step 217004
+    - repeat of 3132108194 found, step 253506
+    - repeat of 171803709 found, step 261603
+    - repeat of 1996602658 found, step 268068
+    - repeat of 3197239990 found, step 282913
+    - repeat of 785843250 found, step 283176
+    - repeat of 3702874290 found, step 284697
+    - repeat of 1246339428 found, step 320024
+    - repeat of 733099515 found, step 374887
+    - repeat of 3019313780 found, step 376049
+    - repeat of 3394954051 found, step 392394
+    - repeat of 2158687918 found, step 392665
+    - repeat of 4211211423 found, step 397006
+    - repeat of 1593228298 found, step 406426
+  - Phase 3, Testing candidates completed (0.0110619 seconds)
+- Testing for repeats completed (0.0218849 seconds)
+---
+18 repeats, p-value = 0.381414
+
+Memory usage summary: heap total: 564225, heap peak: 400384, stack peak: 5664
+         total calls   total memory   failed calls
+ malloc|          5         564225              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          4         491521
+Histogram for block sizes:
+32768-32783           1  20% ============
+   large              4  80% ==================================================

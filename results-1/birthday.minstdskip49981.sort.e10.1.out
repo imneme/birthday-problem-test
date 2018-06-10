@@ -1,0 +1,30 @@
+Testing skipping_rng<regularized_rng<std::minstd_rand,uint32_t>,49981>
+	0..42965 is range of generator
+	1311 outputs to scan for duplicates [6.32456*sqrt(range)]
+	19.7843 duplicates expected on average
+	2.55744e-09 is probability of zero duplicates
+	0x44d9c440 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated array of size 1311.
+  - Allocating memory completed (7.434e-06 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.421443 seconds)
+  - Sorting started...
+  - Sorting completed (6.8765e-05 seconds)
+  - Scanning for duplicates started...
+  - Scanning for duplicates completed (1.327e-06 seconds)
+- Testing for repeats completed (0.421535 seconds)
+---
+0 repeats, p-value = 2.55744e-09
+
+Memory usage summary: heap total: 77948, heap peak: 77948, stack peak: 5568
+         total calls   total memory   failed calls
+ malloc|          2          77948              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+ 5232-5247            1  50% ==================================================
+   large              1  50% ==================================================

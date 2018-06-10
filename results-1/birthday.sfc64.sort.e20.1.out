@@ -1,0 +1,55 @@
+Testing sfc64
+	0..18446744073709551615 is range of generator
+	27163758263 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20 duplicates expected on average
+	2.06115e-09 is probability of zero duplicates
+	0x819f60a is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated array of size 27163758263.
+  - Allocating memory completed (1.1693e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (106.446 seconds)
+  - Sorting started...
+  - Sorting completed (4296.64 seconds)
+  - Scanning for duplicates started...
+    - repeat of 114729560263057416 found
+    - repeat of 795769523057165611 found
+    - repeat of 1057249618717803126 found
+    - repeat of 1092964354969807357 found
+    - repeat of 1228397013127072747 found
+    - repeat of 2235283519449515516 found
+    - repeat of 3522190536565743020 found
+    - repeat of 3759296740463980666 found
+    - repeat of 4439374239403655108 found
+    - repeat of 4640821270393890052 found
+    - repeat of 7295608534108920901 found
+    - repeat of 7530246113812929790 found
+    - repeat of 8666243548312266642 found
+    - repeat of 8967314385710416356 found
+    - repeat of 9351342079977031560 found
+    - repeat of 10970583857374423178 found
+    - repeat of 10988370273508100087 found
+    - repeat of 11500279089657004155 found
+    - repeat of 11990355607277817947 found
+    - repeat of 12422361587695103146 found
+    - repeat of 14193364370560842388 found
+    - repeat of 14712311890019229036 found
+    - repeat of 15632384364606056924 found
+    - repeat of 15829093272192769412 found
+    - repeat of 16952130176412700120 found
+    - repeat of 17569058071682770705 found
+  - Scanning for duplicates completed (43.0682 seconds)
+- Testing for repeats completed (4446.15 seconds)
+---
+26 repeats, p-value = 1 - 0.0778868
+
+Memory usage summary: heap total: 217310138808, heap peak: 217310138808, stack peak: 5600
+         total calls   total memory   failed calls
+ malloc|          2   217310138808              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+   large              2 100% ==================================================

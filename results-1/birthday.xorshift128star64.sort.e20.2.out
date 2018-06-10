@@ -1,0 +1,55 @@
+Testing xorshift128star64a
+	0..18446744073709551615 is range of generator
+	27163758263 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20 duplicates expected on average
+	2.06115e-09 is probability of zero duplicates
+	0xee308e21 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated array of size 27163758263.
+  - Allocating memory completed (2.0006e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (204.078 seconds)
+  - Sorting started...
+  - Sorting completed (4309.36 seconds)
+  - Scanning for duplicates started...
+    - repeat of 2060264496340585024 found
+    - repeat of 2188150514457927138 found
+    - repeat of 2279386316335527787 found
+    - repeat of 2329187477630810423 found
+    - repeat of 3950025837967143827 found
+    - repeat of 6140884460472116140 found
+    - repeat of 7900417192921623111 found
+    - repeat of 9043631669235259533 found
+    - repeat of 9550716717269161441 found
+    - repeat of 9684598551275627320 found
+    - repeat of 12811331677955416310 found
+    - repeat of 12976408514934873276 found
+    - repeat of 14064022962975130518 found
+    - repeat of 14564130625391184568 found
+    - repeat of 14570554138614253021 found
+    - repeat of 14645461442741767033 found
+    - repeat of 15544585974218134152 found
+    - repeat of 15599075725345922380 found
+    - repeat of 15938246410719674869 found
+    - repeat of 16262099846655614297 found
+    - repeat of 16509216252330589817 found
+    - repeat of 16643539619185234200 found
+    - repeat of 17112201646941974851 found
+    - repeat of 17682776484295968696 found
+    - repeat of 17820134216410247836 found
+    - repeat of 18432706111841723451 found
+  - Scanning for duplicates completed (41.0218 seconds)
+- Testing for repeats completed (4554.46 seconds)
+---
+26 repeats, p-value = 1 - 0.0778868
+
+Memory usage summary: heap total: 217310138808, heap peak: 217310138808, stack peak: 5568
+         total calls   total memory   failed calls
+ malloc|          2   217310138808              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+   large              2 100% ==================================================

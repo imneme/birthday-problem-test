@@ -1,0 +1,53 @@
+Testing xoroshiro64starstar32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0xd81ee6ed is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated 256 buckets of capacity 2023
+    - allocated 256 bucket counters
+  - Allocating memory completed (2.0563e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.00365732 seconds)
+  - Sorting started...
+  - Sorting completed (0.0351974 seconds)
+  - Scanning for duplicates started...
+    - repeat of 1107389441 found
+    - repeat of 3885881879 found
+    - repeat of 3533127711 found
+    - repeat of 2648351293 found
+    - repeat of 574144831 found
+    - repeat of 3313914181 found
+    - repeat of 3483661656 found
+    - repeat of 813850458 found
+    - repeat of 1701859689 found
+    - repeat of 3783397756 found
+    - repeat of 3403726730 found
+    - repeat of 1493766300 found
+    - repeat of 993018299 found
+    - repeat of 2123821762 found
+    - repeat of 3344776645 found
+    - repeat of 997516743 found
+    - repeat of 2427913939 found
+    - repeat of 71578326 found
+    - repeat of 3374899427 found
+    - repeat of 1826836453 found
+    - repeat of 263749097 found
+    - repeat of 3999405298 found
+  - Scanning for duplicates completed (0.000556221 seconds)
+- Testing for repeats completed (0.0394478 seconds)
+---
+22 repeats, p-value = 1 - 0.279396
+
+Memory usage summary: heap total: 2145280, heap peak: 2145280, stack peak: 5616
+         total calls   total memory   failed calls
+ malloc|          3        2145280              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+ 1024-1039            1  33% =========================
+   large              2  66% ==================================================

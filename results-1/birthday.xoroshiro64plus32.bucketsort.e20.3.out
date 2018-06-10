@@ -1,0 +1,56 @@
+Testing xoroshiro64plus32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0xaf0dcc0f is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated 256 buckets of capacity 2023
+    - allocated 256 bucket counters
+  - Allocating memory completed (1.0957e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.00203512 seconds)
+  - Sorting started...
+  - Sorting completed (0.0207131 seconds)
+  - Scanning for duplicates started...
+    - repeat of 3244056068 found
+    - repeat of 360982284 found
+    - repeat of 3999252492 found
+    - repeat of 1351616783 found
+    - repeat of 4000066324 found
+    - repeat of 4082879270 found
+    - repeat of 3651961908 found
+    - repeat of 4276798772 found
+    - repeat of 896757056 found
+    - repeat of 1212572237 found
+    - repeat of 3510708303 found
+    - repeat of 4033865042 found
+    - repeat of 3534706275 found
+    - repeat of 3222855282 found
+    - repeat of 212112504 found
+    - repeat of 2618323844 found
+    - repeat of 2010017192 found
+    - repeat of 1606379433 found
+    - repeat of 972601770 found
+    - repeat of 3407381172 found
+    - repeat of 1247427256 found
+    - repeat of 4166618 found
+    - repeat of 410633956 found
+    - repeat of 3008181991 found
+    - repeat of 3508478715 found
+  - Scanning for duplicates completed (0.000365505 seconds)
+- Testing for repeats completed (0.0231335 seconds)
+---
+25 repeats, p-value = 1 - 0.112189
+
+Memory usage summary: heap total: 2145280, heap peak: 2145280, stack peak: 5616
+         total calls   total memory   failed calls
+ malloc|          3        2145280              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+ 1024-1039            1  33% =========================
+   large              2  66% ==================================================

@@ -1,0 +1,48 @@
+Testing pcg32_fast
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0xef7f7600 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated hash table of reserved for 414487 elements
+  - Allocating memory completed (0.00168999 seconds)
+  - Checking PRNG output started...
+    - repeat of 3406381066 found, step 131600
+    - repeat of 808008135 found, step 201259
+    - repeat of 2852799666 found, step 215974
+    - repeat of 2265550415 found, step 219019
+    - repeat of 80135157 found, step 220783
+    - repeat of 2873659488 found, step 266520
+    - repeat of 3719167311 found, step 267037
+    - repeat of 3330014006 found, step 271904
+    - repeat of 715866342 found, step 272445
+    - repeat of 2454108765 found, step 287519
+    - repeat of 1920599588 found, step 287975
+    - repeat of 1443302621 found, step 290385
+    - repeat of 979707980 found, step 310631
+    - repeat of 2797044425 found, step 312946
+    - repeat of 1163180950 found, step 315165
+    - repeat of 1502714349 found, step 327277
+    - repeat of 1191151486 found, step 348238
+    - repeat of 3444387598 found, step 355517
+    - repeat of 1761987627 found, step 362936
+    - repeat of 4202981217 found, step 381267
+    - repeat of 2034619963 found, step 383654
+    - repeat of 167166336 found, step 390410
+  - Checking PRNG output completed (0.0879796 seconds)
+- Testing for repeats completed (0.0896889 seconds)
+---
+22 repeats, p-value = 1 - 0.279396
+
+Memory usage summary: heap total: 10260040, heap peak: 10260040, stack peak: 5648
+         total calls   total memory   failed calls
+ malloc|     414467       10260040              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|     414466       10187336
+Histogram for block sizes:
+   16-31         414465  99% ==================================================
+   large              2  <1% 

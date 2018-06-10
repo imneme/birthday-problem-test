@@ -1,0 +1,25 @@
+Testing divided_rng<regularized_rng<std::minstd_rand,uint32_t>,3>
+	0..715827881 is range of generator
+	535100 outputs to scan for duplicates [20*sqrt(range)]
+	199.95 duplicates expected on average
+	0 is probability of zero duplicates
+	0xcbcacd4b is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated array of size 535100.
+  - Allocating memory completed (5.481e-06 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.00347395 seconds)
+  - Sorting started...
+  - Sorting completed (0.0369099 seconds)
+  - Scanning for duplicates started...
+    - repeat of 1238224 found
+    - repeat of 5025452 found
+	[... 136 repeats omitted ...]
+    - repeat of 709485351 found
+    - repeat of 713044126 found
+  - Scanning for duplicates completed (0.000668383 seconds)
+- Testing for repeats completed (0.0410781 seconds)
+---
+140 repeats, p-value = 4.68457e-06

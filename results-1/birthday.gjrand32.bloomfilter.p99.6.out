@@ -1,0 +1,43 @@
+Testing gjrand32
+	0..4294967295 is range of generator
+	198893 outputs to scan for duplicates [3.03485*sqrt(range)]
+	4.60521 duplicates expected on average
+	0.00999963 is probability of zero duplicates
+	0xe55521e5 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated bloomish filter with 16384 64-bit elements (3 bits/entry)
+    - allocated possible-match log with 8192 32-bit elements
+  - Allocating memory completed (2.1649e-05 seconds)
+  - Phase 1, Gathering repeat candidates started...
+    - 5641 repeat candidates found
+  - Phase 1, Gathering repeat candidates completed (0.0051412 seconds)
+  - Reallocating memory started...
+    - Deallocated bloomish filter
+    - Allocated hash table of the same size
+  - Reallocating memory completed (1.773e-05 seconds)
+  - Phase 2, Storing candidates in hash table started...
+  - Phase 2, Storing candidates in hash table completed (8.8829e-05 seconds)
+  - Phase 3, Testing candidates started...
+    - repeat of 781241808 found, step 95356
+    - repeat of 4260757309 found, step 97695
+    - repeat of 2901162105 found, step 118786
+    - repeat of 2240876474 found, step 147602
+    - repeat of 3730513042 found, step 150327
+    - repeat of 4209874010 found, step 193358
+  - Phase 3, Testing candidates completed (0.00511779 seconds)
+- Testing for repeats completed (0.0104111 seconds)
+---
+6 repeats, p-value = 1 - 0.18266
+
+Memory usage summary: heap total: 318465, heap peak: 236544, stack peak: 5712
+         total calls   total memory   failed calls
+ malloc|          5         318465              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          4         245761
+Histogram for block sizes:
+16384-16399           1  20% ================
+32768-32783           1  20% ================
+   large              3  60% ==================================================

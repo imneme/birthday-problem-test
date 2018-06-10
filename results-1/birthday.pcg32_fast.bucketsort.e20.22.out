@@ -1,0 +1,59 @@
+Testing pcg32_fast
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0x97e7b35f is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated 256 buckets of capacity 2023
+    - allocated 256 bucket counters
+  - Allocating memory completed (1.6771e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.00301488 seconds)
+  - Sorting started...
+  - Sorting completed (0.03149 seconds)
+  - Scanning for duplicates started...
+    - repeat of 4155174415 found
+    - repeat of 3840571921 found
+    - repeat of 3663744026 found
+    - repeat of 511071787 found
+    - repeat of 1236001344 found
+    - repeat of 1516484677 found
+    - repeat of 2806969158 found
+    - repeat of 2189994055 found
+    - repeat of 3543556679 found
+    - repeat of 2548693327 found
+    - repeat of 317452123 found
+    - repeat of 1609041767 found
+    - repeat of 14320246 found
+    - repeat of 2913364349 found
+    - repeat of 928966785 found
+    - repeat of 3537348755 found
+    - repeat of 2005701535 found
+    - repeat of 873049255 found
+    - repeat of 3306548400 found
+    - repeat of 3054253002 found
+    - repeat of 2299553750 found
+    - repeat of 3471556822 found
+    - repeat of 1535570652 found
+    - repeat of 2410324956 found
+    - repeat of 3545151716 found
+    - repeat of 3542436078 found
+    - repeat of 492913651 found
+    - repeat of 305089783 found
+  - Scanning for duplicates completed (0.000531957 seconds)
+- Testing for repeats completed (0.0350724 seconds)
+---
+28 repeats, p-value = 1 - 0.0343352
+
+Memory usage summary: heap total: 2145280, heap peak: 2145280, stack peak: 5616
+         total calls   total memory   failed calls
+ malloc|          3        2145280              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+ 1024-1039            1  33% =========================
+   large              2  66% ==================================================

@@ -1,0 +1,52 @@
+Testing xoroshiro64star32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0xc679dfe6 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated 256 buckets of capacity 2023
+    - allocated 256 bucket counters
+  - Allocating memory completed (1.5577e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.00312291 seconds)
+  - Sorting started...
+  - Sorting completed (0.0310388 seconds)
+  - Scanning for duplicates started...
+    - repeat of 2977460528 found
+    - repeat of 2963873591 found
+    - repeat of 4095891255 found
+    - repeat of 1425478724 found
+    - repeat of 4138335044 found
+    - repeat of 2954970704 found
+    - repeat of 2978623571 found
+    - repeat of 539438945 found
+    - repeat of 3994128487 found
+    - repeat of 688377197 found
+    - repeat of 407023738 found
+    - repeat of 1813106065 found
+    - repeat of 155963540 found
+    - repeat of 2488300436 found
+    - repeat of 2020585880 found
+    - repeat of 796087975 found
+    - repeat of 1929959340 found
+    - repeat of 2467598023 found
+    - repeat of 1273161425 found
+    - repeat of 2086223828 found
+    - repeat of 2033073643 found
+  - Scanning for duplicates completed (0.0005372 seconds)
+- Testing for repeats completed (0.0347369 seconds)
+---
+21 repeats, p-value = 1 - 0.35631
+
+Memory usage summary: heap total: 2145280, heap peak: 2145280, stack peak: 5616
+         total calls   total memory   failed calls
+ malloc|          3        2145280              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+ 1024-1039            1  33% =========================
+   large              2  66% ==================================================

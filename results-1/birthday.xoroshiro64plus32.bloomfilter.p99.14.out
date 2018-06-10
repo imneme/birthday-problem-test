@@ -1,0 +1,41 @@
+Testing xoroshiro64plus32
+	0..4294967295 is range of generator
+	198893 outputs to scan for duplicates [3.03485*sqrt(range)]
+	4.60521 duplicates expected on average
+	0.00999963 is probability of zero duplicates
+	0x3d2cb559 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated bloomish filter with 16384 64-bit elements (3 bits/entry)
+    - allocated possible-match log with 8192 32-bit elements
+  - Allocating memory completed (2.097e-05 seconds)
+  - Phase 1, Gathering repeat candidates started...
+    - 5740 repeat candidates found
+  - Phase 1, Gathering repeat candidates completed (0.00499362 seconds)
+  - Reallocating memory started...
+    - Deallocated bloomish filter
+    - Allocated hash table of the same size
+  - Reallocating memory completed (1.7583e-05 seconds)
+  - Phase 2, Storing candidates in hash table started...
+  - Phase 2, Storing candidates in hash table completed (8.8436e-05 seconds)
+  - Phase 3, Testing candidates started...
+    - repeat of 2098941881 found, step 60472
+    - repeat of 2074592227 found, step 81515
+    - repeat of 537304997 found, step 93223
+    - repeat of 1344018502 found, step 149344
+  - Phase 3, Testing candidates completed (0.00474107 seconds)
+- Testing for repeats completed (0.00988395 seconds)
+---
+4 repeats, p-value = 1 - 0.487742
+
+Memory usage summary: heap total: 318465, heap peak: 236544, stack peak: 5680
+         total calls   total memory   failed calls
+ malloc|          5         318465              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          4         245761
+Histogram for block sizes:
+16384-16399           1  20% ================
+32768-32783           1  20% ================
+   large              3  60% ==================================================

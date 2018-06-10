@@ -1,0 +1,48 @@
+Testing sfc32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0xaab98df9 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated hash table of reserved for 414487 elements
+  - Allocating memory completed (0.0022945 seconds)
+  - Checking PRNG output started...
+    - repeat of 1368368886 found, step 46758
+    - repeat of 3472599609 found, step 83920
+    - repeat of 3795776333 found, step 144722
+    - repeat of 3981543635 found, step 200988
+    - repeat of 315793672 found, step 239452
+    - repeat of 397182704 found, step 255298
+    - repeat of 3831487412 found, step 263178
+    - repeat of 1876920626 found, step 268276
+    - repeat of 2868562662 found, step 279907
+    - repeat of 2227958109 found, step 292181
+    - repeat of 2633189638 found, step 301537
+    - repeat of 1611504453 found, step 302154
+    - repeat of 448417295 found, step 323349
+    - repeat of 3726419954 found, step 325315
+    - repeat of 1681154934 found, step 328680
+    - repeat of 2683951742 found, step 331389
+    - repeat of 3885251988 found, step 332076
+    - repeat of 755847164 found, step 347501
+    - repeat of 1721075514 found, step 349041
+    - repeat of 3587604608 found, step 361664
+    - repeat of 177304940 found, step 407324
+    - repeat of 3220060435 found, step 413874
+  - Checking PRNG output completed (0.106828 seconds)
+- Testing for repeats completed (0.10914 seconds)
+---
+22 repeats, p-value = 1 - 0.279396
+
+Memory usage summary: heap total: 10260040, heap peak: 10260040, stack peak: 5648
+         total calls   total memory   failed calls
+ malloc|     414467       10260040              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|     414466       10187336
+Histogram for block sizes:
+   16-31         414465  99% ==================================================
+   large              2  <1% 

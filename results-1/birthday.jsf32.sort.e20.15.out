@@ -1,0 +1,45 @@
+Testing jsf32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0x153986f9 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated array of size 414487.
+  - Allocating memory completed (8.836e-06 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.00231658 seconds)
+  - Sorting started...
+  - Sorting completed (0.0590855 seconds)
+  - Scanning for duplicates started...
+    - repeat of 378461159 found
+    - repeat of 549364517 found
+    - repeat of 690188442 found
+    - repeat of 1591152798 found
+    - repeat of 1662453332 found
+    - repeat of 1750099940 found
+    - repeat of 1802541041 found
+    - repeat of 2370213887 found
+    - repeat of 2681882562 found
+    - repeat of 2870724859 found
+    - repeat of 2973342306 found
+    - repeat of 3086002686 found
+    - repeat of 3229693449 found
+    - repeat of 3367191029 found
+    - repeat of 3423302961 found
+    - repeat of 4291407729 found
+  - Scanning for duplicates completed (0.000509044 seconds)
+- Testing for repeats completed (0.061949 seconds)
+---
+16 repeats, p-value = 0.221068
+
+Memory usage summary: heap total: 1730652, heap peak: 1730652, stack peak: 5568
+         total calls   total memory   failed calls
+ malloc|          2        1730652              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+   large              2 100% ==================================================

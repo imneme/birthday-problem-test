@@ -1,0 +1,60 @@
+Testing sfc64
+	0..18446744073709551615 is range of generator
+	27163758263 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20 duplicates expected on average
+	2.06115e-09 is probability of zero duplicates
+	0x715071e5 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated array of size 27163758263.
+  - Allocating memory completed (1.2366e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (102.542 seconds)
+  - Sorting started...
+  - Sorting completed (4289.48 seconds)
+  - Scanning for duplicates started...
+    - repeat of 1448231009217638408 found
+    - repeat of 1476748270373048612 found
+    - repeat of 1490575753340881645 found
+    - repeat of 1862458722493473834 found
+    - repeat of 2921426588303769681 found
+    - repeat of 3186838933504991603 found
+    - repeat of 3209246860562406174 found
+    - repeat of 3447022200415991949 found
+    - repeat of 3829217819559425114 found
+    - repeat of 3952881619518104757 found
+    - repeat of 4428318688518876430 found
+    - repeat of 5252852791885934152 found
+    - repeat of 5422433433703659934 found
+    - repeat of 6172933085384776982 found
+    - repeat of 6226962008573289333 found
+    - repeat of 6614756682934827395 found
+    - repeat of 7032841026960951876 found
+    - repeat of 8594281059765254932 found
+    - repeat of 9029524139391280343 found
+    - repeat of 9137569116905470119 found
+    - repeat of 9609079306937548246 found
+    - repeat of 9843484460604332094 found
+    - repeat of 11825723769178813436 found
+    - repeat of 12474599793220281504 found
+    - repeat of 14973595537418670179 found
+    - repeat of 15226091074596142849 found
+    - repeat of 15278587049073773416 found
+    - repeat of 16776886269629981924 found
+    - repeat of 17188466967713298232 found
+    - repeat of 17465897494380991595 found
+    - repeat of 17854271832632538818 found
+  - Scanning for duplicates completed (37.7749 seconds)
+- Testing for repeats completed (4429.79 seconds)
+---
+31 repeats, p-value = 1 - 0.00809175
+
+Memory usage summary: heap total: 217310138808, heap peak: 217310138808, stack peak: 5600
+         total calls   total memory   failed calls
+ malloc|          2   217310138808              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+   large              2 100% ==================================================

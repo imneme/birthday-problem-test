@@ -1,0 +1,35 @@
+Testing xorshift64star32a
+	0..4294967295 is range of generator
+	198893 outputs to scan for duplicates [3.03485*sqrt(range)]
+	4.60511 duplicates expected on average
+	0.0100006 is probability of zero duplicates
+	0xf1e4dd8f is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated array of size 198893.
+  - Allocating memory completed (5.367e-06 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.000752381 seconds)
+  - Sorting started...
+  - Sorting completed (0.0285137 seconds)
+  - Scanning for duplicates started...
+    - repeat of 453973821 found
+    - repeat of 1513867556 found
+    - repeat of 1568130153 found
+    - repeat of 1802517597 found
+    - repeat of 3220484903 found
+    - repeat of 4031435376 found
+  - Scanning for duplicates completed (0.000289256 seconds)
+- Testing for repeats completed (0.0295709 seconds)
+---
+6 repeats, p-value = 1 - 0.182648
+
+Memory usage summary: heap total: 868276, heap peak: 868276, stack peak: 5568
+         total calls   total memory   failed calls
+ malloc|          2         868276              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+   large              2 100% ==================================================

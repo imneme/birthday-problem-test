@@ -1,0 +1,20 @@
+Testing skipping_rng<regularized_rng<std::minstd_rand,uint32_t>,49981>
+	0..42965 is range of generator
+	927 outputs to scan for duplicates [4.47214*sqrt(range)]
+	9.91802 duplicates expected on average
+	4.92789e-05 is probability of zero duplicates
+	0x772e31e is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated array of size 927.
+  - Allocating memory completed (6.78e-06 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.288049 seconds)
+  - Sorting started...
+  - Sorting completed (4.5302e-05 seconds)
+  - Scanning for duplicates started...
+  - Scanning for duplicates completed (1.003e-06 seconds)
+- Testing for repeats completed (0.288124 seconds)
+---
+0 repeats, p-value = 4.92789e-05

@@ -1,0 +1,46 @@
+Testing gjrand32
+	0..4294967295 is range of generator
+	198893 outputs to scan for duplicates [3.03485*sqrt(range)]
+	4.60521 duplicates expected on average
+	0.00999963 is probability of zero duplicates
+	0xc200ab7e is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated bloomish filter with 16384 64-bit elements (3 bits/entry)
+    - allocated possible-match log with 8192 32-bit elements
+  - Allocating memory completed (1.2164e-05 seconds)
+  - Phase 1, Gathering repeat candidates started...
+    - 5769 repeat candidates found
+  - Phase 1, Gathering repeat candidates completed (0.0029335 seconds)
+  - Reallocating memory started...
+    - Deallocated bloomish filter
+    - Allocated hash table of the same size
+  - Reallocating memory completed (9.713e-06 seconds)
+  - Phase 2, Storing candidates in hash table started...
+  - Phase 2, Storing candidates in hash table completed (5.2394e-05 seconds)
+  - Phase 3, Testing candidates started...
+    - repeat of 393046597 found, step 9761
+    - repeat of 2894480422 found, step 88815
+    - repeat of 3765542499 found, step 102006
+    - repeat of 3095471720 found, step 147492
+    - repeat of 4062525310 found, step 161713
+    - repeat of 1186538911 found, step 166362
+    - repeat of 1584433913 found, step 168098
+    - repeat of 143196092 found, step 193762
+    - repeat of 3095948965 found, step 198466
+  - Phase 3, Testing candidates completed (0.0029838 seconds)
+- Testing for repeats completed (0.00600501 seconds)
+---
+9 repeats, p-value = 1 - 0.0196605
+
+Memory usage summary: heap total: 318465, heap peak: 236544, stack peak: 5712
+         total calls   total memory   failed calls
+ malloc|          5         318465              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          4         245761
+Histogram for block sizes:
+16384-16399           1  20% ================
+32768-32783           1  20% ================
+   large              3  60% ==================================================

@@ -1,0 +1,64 @@
+- bump_allocator_static< std::__detail::_Hash_node<unsigned int, false> > (item size = 16) at 0x6042d0 created!
+- bump_allocator_static< std::__detail::_Hash_node_base* > (item size = 8) at 0x604310 created!
+- mempool at 0x604298 allocated new chunk at 0x7fb64481b020
+- mempool at 0x604298 deallocated chunk at 0x7fb64481b020
+Testing jsf32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0x1fb7b92 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated hash table of reserved for 414487 elements
+  - Allocating memory completed (0.00255919 seconds)
+  - Checking PRNG output started...
+    - repeat of 560726757 found, step 34999
+    - repeat of 252076315 found, step 44083
+    - repeat of 4096250462 found, step 67557
+    - repeat of 3958690524 found, step 89107
+    - repeat of 814612906 found, step 98921
+    - repeat of 1488469890 found, step 179543
+    - repeat of 1063818620 found, step 199408
+    - repeat of 118080975 found, step 229055
+    - repeat of 2096676564 found, step 238928
+    - repeat of 1839311419 found, step 244563
+    - repeat of 3875127377 found, step 254496
+    - repeat of 903009107 found, step 276940
+    - repeat of 1457318811 found, step 282401
+    - repeat of 292351820 found, step 349805
+    - repeat of 1135438204 found, step 377532
+    - repeat of 1817313222 found, step 394076
+    - repeat of 2319799240 found, step 403999
+  - Checking PRNG output completed (0.0398048 seconds)
+- Testing for repeats completed (0.0423768 seconds)
+---
+17 repeats, p-value = 0.297021
+- bump_allocator_static< std::__detail::_Hash_node_base* > at 0x604310 destroyed!
+ - total_allocations_  = 1
+ - active_allocations_ = 0
+ - high_allocations_   = 1
+ - total_mem_  = 3555896
+ - active_mem_ = 0
+ - high_mem_   = 3555896
+- bump_allocator_static< std::__detail::_Hash_node<unsigned int, false> > at 0x6042d0 destroyed!
+ - total_allocations_  = 414470
+ - active_allocations_ = 0
+ - high_allocations_   = 414470
+ - total_mem_  = 6631520
+ - active_mem_ = 0
+ - high_mem_   = 6631520
+
+Memory usage summary: heap total: 1073815760, heap peak: 1073815568, stack peak: 2816
+         total calls   total memory   failed calls
+ malloc|          5     1073815568              0
+realloc|          4            192              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          6     1073742032
+Histogram for block sizes:
+   16-31              1  11% =========================
+   32-47              2  22% ==================================================
+   64-79              2  22% ==================================================
+  512-527             2  22% ==================================================
+   large              2  22% ==================================================

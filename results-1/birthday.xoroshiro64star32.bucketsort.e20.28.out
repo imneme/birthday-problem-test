@@ -1,0 +1,56 @@
+Testing xoroshiro64star32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0x45d72b5d is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated 256 buckets of capacity 2023
+    - allocated 256 bucket counters
+  - Allocating memory completed (1.3108e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.0023264 seconds)
+  - Sorting started...
+  - Sorting completed (0.0233452 seconds)
+  - Scanning for duplicates started...
+    - repeat of 2747452165 found
+    - repeat of 2005560330 found
+    - repeat of 373560879 found
+    - repeat of 4007872333 found
+    - repeat of 3670928462 found
+    - repeat of 3763606612 found
+    - repeat of 1338001237 found
+    - repeat of 2291342422 found
+    - repeat of 3894255982 found
+    - repeat of 791275632 found
+    - repeat of 3475101591 found
+    - repeat of 2350552992 found
+    - repeat of 4056879022 found
+    - repeat of 2298362297 found
+    - repeat of 3501695418 found
+    - repeat of 948874173 found
+    - repeat of 2794147261 found
+    - repeat of 2881057985 found
+    - repeat of 3990699474 found
+    - repeat of 1881356246 found
+    - repeat of 1804794588 found
+    - repeat of 1633415906 found
+    - repeat of 3190195684 found
+    - repeat of 1069393398 found
+    - repeat of 1065884151 found
+  - Scanning for duplicates completed (0.000407907 seconds)
+- Testing for repeats completed (0.0261027 seconds)
+---
+25 repeats, p-value = 1 - 0.112189
+
+Memory usage summary: heap total: 2145280, heap peak: 2145280, stack peak: 5616
+         total calls   total memory   failed calls
+ malloc|          3        2145280              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+ 1024-1039            1  33% =========================
+   large              2  66% ==================================================

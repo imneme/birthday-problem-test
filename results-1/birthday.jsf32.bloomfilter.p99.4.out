@@ -1,0 +1,42 @@
+Testing jsf32
+	0..4294967295 is range of generator
+	198893 outputs to scan for duplicates [3.03485*sqrt(range)]
+	4.60521 duplicates expected on average
+	0.00999963 is probability of zero duplicates
+	0x9161b878 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated bloomish filter with 16384 64-bit elements (3 bits/entry)
+    - allocated possible-match log with 8192 32-bit elements
+  - Allocating memory completed (2.1773e-05 seconds)
+  - Phase 1, Gathering repeat candidates started...
+    - 5589 repeat candidates found
+  - Phase 1, Gathering repeat candidates completed (0.00480629 seconds)
+  - Reallocating memory started...
+    - Deallocated bloomish filter
+    - Allocated hash table of the same size
+  - Reallocating memory completed (1.7673e-05 seconds)
+  - Phase 2, Storing candidates in hash table started...
+  - Phase 2, Storing candidates in hash table completed (8.0455e-05 seconds)
+  - Phase 3, Testing candidates started...
+    - repeat of 3216812766 found, step 78704
+    - repeat of 2091077048 found, step 92147
+    - repeat of 1240549344 found, step 97618
+    - repeat of 2290104275 found, step 188962
+    - repeat of 2403105764 found, step 193920
+  - Phase 3, Testing candidates completed (0.00463192 seconds)
+- Testing for repeats completed (0.00958198 seconds)
+---
+5 repeats, p-value = 1 - 0.315139
+
+Memory usage summary: heap total: 318465, heap peak: 236544, stack peak: 5712
+         total calls   total memory   failed calls
+ malloc|          5         318465              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          4         245761
+Histogram for block sizes:
+16384-16399           1  20% ================
+32768-32783           1  20% ================
+   large              3  60% ==================================================

@@ -1,0 +1,55 @@
+Testing xoroshiro64star32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0xc8caa797 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated hash table of reserved for 414487 elements
+  - Allocating memory completed (0.00215739 seconds)
+  - Checking PRNG output started...
+    - repeat of 2784440971 found, step 92721
+    - repeat of 3178628802 found, step 135476
+    - repeat of 74790553 found, step 181680
+    - repeat of 2748320894 found, step 186793
+    - repeat of 695109557 found, step 187002
+    - repeat of 479659016 found, step 195704
+    - repeat of 2492382348 found, step 203643
+    - repeat of 1532260535 found, step 208006
+    - repeat of 3604920182 found, step 227834
+    - repeat of 3744777803 found, step 248049
+    - repeat of 3396473200 found, step 249022
+    - repeat of 2300864830 found, step 278739
+    - repeat of 1339260882 found, step 306195
+    - repeat of 3662825736 found, step 327101
+    - repeat of 383617609 found, step 335016
+    - repeat of 4156956002 found, step 351563
+    - repeat of 3735290131 found, step 359879
+    - repeat of 600483971 found, step 369183
+    - repeat of 3692746525 found, step 374218
+    - repeat of 55161505 found, step 375315
+    - repeat of 870281975 found, step 385881
+    - repeat of 408027839 found, step 387013
+    - repeat of 3305954345 found, step 391726
+    - repeat of 270815605 found, step 394651
+    - repeat of 879236803 found, step 395827
+    - repeat of 3434681054 found, step 408353
+    - repeat of 588706506 found, step 409163
+    - repeat of 3728182606 found, step 412060
+    - repeat of 2127973111 found, step 413782
+  - Checking PRNG output completed (0.11036 seconds)
+- Testing for repeats completed (0.112533 seconds)
+---
+29 repeats, p-value = 1 - 0.0218194
+
+Memory usage summary: heap total: 10259928, heap peak: 10259928, stack peak: 5648
+         total calls   total memory   failed calls
+ malloc|     414460       10259928              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|     414459       10187224
+Histogram for block sizes:
+   16-31         414458  99% ==================================================
+   large              2  <1% 

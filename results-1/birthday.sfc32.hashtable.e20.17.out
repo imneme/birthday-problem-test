@@ -1,0 +1,46 @@
+Testing sfc32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0x50eeef59 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated hash table of reserved for 414487 elements
+  - Allocating memory completed (0.00188538 seconds)
+  - Checking PRNG output started...
+    - repeat of 120115457 found, step 75941
+    - repeat of 770597388 found, step 156616
+    - repeat of 2491964373 found, step 185859
+    - repeat of 331337064 found, step 187134
+    - repeat of 1930791749 found, step 190547
+    - repeat of 4252648915 found, step 242936
+    - repeat of 267363711 found, step 251023
+    - repeat of 2766230007 found, step 267090
+    - repeat of 1693034058 found, step 273176
+    - repeat of 1170153153 found, step 307998
+    - repeat of 3389034218 found, step 308694
+    - repeat of 1078450731 found, step 336710
+    - repeat of 3008344015 found, step 374805
+    - repeat of 322817349 found, step 377418
+    - repeat of 2094845710 found, step 381598
+    - repeat of 3219376457 found, step 385869
+    - repeat of 1501492321 found, step 392937
+    - repeat of 1335528675 found, step 401322
+    - repeat of 3631130228 found, step 404480
+    - repeat of 2291465266 found, step 406328
+  - Checking PRNG output completed (0.0911056 seconds)
+- Testing for repeats completed (0.0930082 seconds)
+---
+20 repeats, p-value = 1 - 0.440915
+
+Memory usage summary: heap total: 10260072, heap peak: 10260072, stack peak: 5648
+         total calls   total memory   failed calls
+ malloc|     414469       10260072              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|     414468       10187368
+Histogram for block sizes:
+   16-31         414467  99% ==================================================
+   large              2  <1% 

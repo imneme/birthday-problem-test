@@ -1,0 +1,50 @@
+Testing jsf32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0x5dea85ee is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated hash table of reserved for 414487 elements
+  - Allocating memory completed (0.00167355 seconds)
+  - Checking PRNG output started...
+    - repeat of 1510857397 found, step 10634
+    - repeat of 1220361885 found, step 110111
+    - repeat of 1648549764 found, step 153975
+    - repeat of 2840129771 found, step 163944
+    - repeat of 1912022123 found, step 183228
+    - repeat of 3000437513 found, step 185523
+    - repeat of 1569161 found, step 196711
+    - repeat of 755350790 found, step 249793
+    - repeat of 1065066416 found, step 266154
+    - repeat of 1928808867 found, step 274933
+    - repeat of 1055925939 found, step 305087
+    - repeat of 2992891241 found, step 310975
+    - repeat of 2995716051 found, step 312768
+    - repeat of 3226956801 found, step 314305
+    - repeat of 2409069471 found, step 314351
+    - repeat of 3409690573 found, step 329087
+    - repeat of 1406406321 found, step 332127
+    - repeat of 3964093525 found, step 345007
+    - repeat of 769647268 found, step 348609
+    - repeat of 2464200823 found, step 368922
+    - repeat of 3877577041 found, step 383737
+    - repeat of 3229943838 found, step 392167
+    - repeat of 3321012760 found, step 399059
+    - repeat of 1870506685 found, step 407080
+  - Checking PRNG output completed (0.102855 seconds)
+- Testing for repeats completed (0.104549 seconds)
+---
+24 repeats, p-value = 1 - 0.156778
+
+Memory usage summary: heap total: 10260008, heap peak: 10260008, stack peak: 5648
+         total calls   total memory   failed calls
+ malloc|     414465       10260008              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|     414464       10187304
+Histogram for block sizes:
+   16-31         414463  99% ==================================================
+   large              2  <1% 

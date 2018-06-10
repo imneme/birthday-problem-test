@@ -1,0 +1,46 @@
+Testing xoroshiro64starstar32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0xa61b17cb is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated bloomish filter with 32768 64-bit elements (3 bits/entry)
+    - allocated possible-match log with 16384 32-bit elements
+  - Allocating memory completed (1.1228e-05 seconds)
+  - Phase 1, Gathering repeat candidates started...
+    - 15511 repeat candidates found
+  - Phase 1, Gathering repeat candidates completed (0.00580573 seconds)
+  - Reallocating memory started...
+    - Deallocated bloomish filter
+    - Allocated hash table of the same size
+  - Reallocating memory completed (9.9496e-05 seconds)
+  - Phase 2, Storing candidates in hash table started...
+  - Phase 2, Storing candidates in hash table completed (0.000142126 seconds)
+  - Phase 3, Testing candidates started...
+    - repeat of 3079821674 found, step 119313
+    - repeat of 1297046887 found, step 159624
+    - repeat of 4076403614 found, step 198573
+    - repeat of 1814792663 found, step 254820
+    - repeat of 1320246189 found, step 304822
+    - repeat of 2945302829 found, step 306337
+    - repeat of 6462362 found, step 343302
+    - repeat of 1217053731 found, step 349537
+    - repeat of 2184763983 found, step 381013
+    - repeat of 1692471294 found, step 394755
+  - Phase 3, Testing candidates completed (0.00724294 seconds)
+- Testing for repeats completed (0.0133276 seconds)
+---
+10 repeats, p-value = 0.0108112
+
+Memory usage summary: heap total: 564225, heap peak: 400384, stack peak: 5680
+         total calls   total memory   failed calls
+ malloc|          5         564225              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          4         491521
+Histogram for block sizes:
+32768-32783           1  20% ============
+   large              4  80% ==================================================

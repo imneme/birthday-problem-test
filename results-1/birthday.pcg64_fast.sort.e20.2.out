@@ -1,0 +1,55 @@
+Testing pcg64_fast
+	0..18446744073709551615 is range of generator
+	27163758263 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20 duplicates expected on average
+	2.06115e-09 is probability of zero duplicates
+	0xebd0f0d6 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated array of size 27163758263.
+  - Allocating memory completed (1.491e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (128.951 seconds)
+  - Sorting started...
+  - Sorting completed (4239.96 seconds)
+  - Scanning for duplicates started...
+    - repeat of 349368398071674982 found
+    - repeat of 1149403101594498000 found
+    - repeat of 2154165476708761710 found
+    - repeat of 2199630128008548370 found
+    - repeat of 2961314479003827674 found
+    - repeat of 3365481568152989034 found
+    - repeat of 4948681912891435134 found
+    - repeat of 8070935100446976621 found
+    - repeat of 8246036787898508348 found
+    - repeat of 8246843521468765058 found
+    - repeat of 8388779695475391445 found
+    - repeat of 8530168007509533258 found
+    - repeat of 9641751905585959016 found
+    - repeat of 10464955367238688774 found
+    - repeat of 11000247147823726216 found
+    - repeat of 14026707519283217381 found
+    - repeat of 14602626513699939610 found
+    - repeat of 14763913697748763004 found
+    - repeat of 15180366246015995922 found
+    - repeat of 15312737839916561036 found
+    - repeat of 16025193755366807297 found
+    - repeat of 16261475970183059055 found
+    - repeat of 17510761710652258788 found
+    - repeat of 17553363368685766198 found
+    - repeat of 17596306313161645378 found
+    - repeat of 17973302344308877000 found
+  - Scanning for duplicates completed (37.5654 seconds)
+- Testing for repeats completed (4406.48 seconds)
+---
+26 repeats, p-value = 1 - 0.0778868
+
+Memory usage summary: heap total: 217310138808, heap peak: 217310138808, stack peak: 5584
+         total calls   total memory   failed calls
+ malloc|          2   217310138808              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+   large              2 100% ==================================================

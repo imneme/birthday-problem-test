@@ -1,0 +1,55 @@
+# Identification
+Vendor                : GenuineIntel
+Brand String          : Intel(R) Xeon(R) W-2104 CPU @ 3.20GHz
+Model Number          : 85 (Skylake W)
+Family Code           : 6
+Extended Model        : 5
+Extended Family       : 0
+Stepping ID           : 4
+
+# Multi-Core Information
+Logical Processors (Threads) per Physical Processor : 16
+Cores per Physical Package                          : 4
+
+# Caches
+## L1 Instruction Cache
+Size                  : 32K
+Line Size             : 64B
+Sharing               : shared between 2 processor threads
+Sets                  : 8192
+Partitions            : 1
+Associativity         : 4
+
+## L1 Data Cache
+Size                  : 32K
+Line Size             : 64B
+Sharing               : shared between 2 processor threads
+Sets                  : 8192
+Partitions            : 1
+Associativity         : 4
+
+## L2 Unified Cache
+Size                  : 1M
+Line Size             : 64B
+Sharing               : shared between 2 processor threads
+Sets                  : 1024
+Partitions            : 1
+Associativity         : 16
+
+## L3 Unified Cache
+Size                  : 8M
+Line Size             : 64B
+Sharing               : shared between 16 processor threads
+Sets                  : 12288
+Partitions            : 1
+Associativity         : 11
+
+# Translation Lookaside Buffers
+L0 Instruction TLBs   : 8 large, 0 small
+L1 Instruction TLBs   : 0 large, 0 small
+L0 Data TLBs          : 0 large, 64 small
+L1 Data TLBs          : 0 large, 128 small
+
+# Memory
+
+Total Memory          : 32 GB

@@ -1,0 +1,55 @@
+Testing xoroshiro64starstar32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0xa07f789b is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated array of size 414487.
+  - Allocating memory completed (5.375e-06 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.00174905 seconds)
+  - Sorting started...
+  - Sorting completed (0.0595128 seconds)
+  - Scanning for duplicates started...
+    - repeat of 108944502 found
+    - repeat of 268853810 found
+    - repeat of 371780051 found
+    - repeat of 523197428 found
+    - repeat of 1027188602 found
+    - repeat of 1088660826 found
+    - repeat of 1392089803 found
+    - repeat of 1532014211 found
+    - repeat of 1810268756 found
+    - repeat of 1822015019 found
+    - repeat of 1913699591 found
+    - repeat of 2004654925 found
+    - repeat of 2004936813 found
+    - repeat of 2036019474 found
+    - repeat of 2087194455 found
+    - repeat of 2116047671 found
+    - repeat of 2130865477 found
+    - repeat of 2245417458 found
+    - repeat of 2507282343 found
+    - repeat of 2554470001 found
+    - repeat of 2818017785 found
+    - repeat of 3186005015 found
+    - repeat of 3561731493 found
+    - repeat of 3566170206 found
+    - repeat of 3571495793 found
+    - repeat of 3968071176 found
+  - Scanning for duplicates completed (0.000539695 seconds)
+- Testing for repeats completed (0.0618245 seconds)
+---
+26 repeats, p-value = 1 - 0.0778899
+
+Memory usage summary: heap total: 1730652, heap peak: 1730652, stack peak: 5568
+         total calls   total memory   failed calls
+ malloc|          2        1730652              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+   large              2 100% ==================================================

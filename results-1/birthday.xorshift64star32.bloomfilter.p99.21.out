@@ -1,0 +1,46 @@
+Testing xorshift64star32a
+	0..4294967295 is range of generator
+	198893 outputs to scan for duplicates [3.03485*sqrt(range)]
+	4.60511 duplicates expected on average
+	0.0100006 is probability of zero duplicates
+	0xe08a6d70 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated bloomish filter with 16384 64-bit elements (3 bits/entry)
+    - allocated possible-match log with 8192 32-bit elements
+  - Allocating memory completed (1.3209e-05 seconds)
+  - Phase 1, Gathering repeat candidates started...
+    - 5830 repeat candidates found
+  - Phase 1, Gathering repeat candidates completed (0.00339586 seconds)
+  - Reallocating memory started...
+    - Deallocated bloomish filter
+    - Allocated hash table of the same size
+  - Reallocating memory completed (1.2349e-05 seconds)
+  - Phase 2, Storing candidates in hash table started...
+  - Phase 2, Storing candidates in hash table completed (6.2613e-05 seconds)
+  - Phase 3, Testing candidates started...
+    - repeat of 769059308 found, step 51596
+    - repeat of 411727081 found, step 98488
+    - repeat of 1135350675 found, step 107572
+    - repeat of 123305166 found, step 115846
+    - repeat of 3928952491 found, step 117163
+    - repeat of 403321799 found, step 140301
+    - repeat of 3044060426 found, step 141139
+    - repeat of 1683580634 found, step 178768
+    - repeat of 2510661254 found, step 198165
+  - Phase 3, Testing candidates completed (0.00352149 seconds)
+- Testing for repeats completed (0.00701678 seconds)
+---
+9 repeats, p-value = 1 - 0.0196581
+
+Memory usage summary: heap total: 318465, heap peak: 236544, stack peak: 5664
+         total calls   total memory   failed calls
+ malloc|          5         318465              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          4         245761
+Histogram for block sizes:
+16384-16399           1  20% ================
+32768-32783           1  20% ================
+   large              3  60% ==================================================

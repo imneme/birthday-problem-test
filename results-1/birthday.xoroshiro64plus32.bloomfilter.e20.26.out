@@ -1,0 +1,54 @@
+Testing xoroshiro64plus32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0xb333fcfa is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated bloomish filter with 32768 64-bit elements (3 bits/entry)
+    - allocated possible-match log with 16384 32-bit elements
+  - Allocating memory completed (1.3862e-05 seconds)
+  - Phase 1, Gathering repeat candidates started...
+    - 15249 repeat candidates found
+  - Phase 1, Gathering repeat candidates completed (0.00935834 seconds)
+  - Reallocating memory started...
+    - Deallocated bloomish filter
+    - Allocated hash table of the same size
+  - Reallocating memory completed (0.000142409 seconds)
+  - Phase 2, Storing candidates in hash table started...
+  - Phase 2, Storing candidates in hash table completed (0.000250943 seconds)
+  - Phase 3, Testing candidates started...
+    - repeat of 3076138499 found, step 166956
+    - repeat of 1263771463 found, step 202048
+    - repeat of 1657148789 found, step 211693
+    - repeat of 4028322856 found, step 243372
+    - repeat of 3398880127 found, step 251784
+    - repeat of 3215336929 found, step 289827
+    - repeat of 481625698 found, step 294754
+    - repeat of 359968688 found, step 323582
+    - repeat of 4132684807 found, step 338710
+    - repeat of 3376442512 found, step 346442
+    - repeat of 3795603124 found, step 351215
+    - repeat of 79170709 found, step 359739
+    - repeat of 4153112987 found, step 364828
+    - repeat of 1071653194 found, step 373511
+    - repeat of 3302282566 found, step 379062
+    - repeat of 1574174756 found, step 390439
+    - repeat of 4058885139 found, step 405910
+    - repeat of 674401663 found, step 410230
+  - Phase 3, Testing candidates completed (0.0105445 seconds)
+- Testing for repeats completed (0.0203406 seconds)
+---
+18 repeats, p-value = 0.381414
+
+Memory usage summary: heap total: 564225, heap peak: 400384, stack peak: 5680
+         total calls   total memory   failed calls
+ malloc|          5         564225              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          4         491521
+Histogram for block sizes:
+32768-32783           1  20% ============
+   large              4  80% ==================================================

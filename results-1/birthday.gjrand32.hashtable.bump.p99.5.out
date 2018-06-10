@@ -1,0 +1,51 @@
+- bump_allocator_static< std::__detail::_Hash_node<unsigned int, false> > (item size = 16) at 0x6042d0 created!
+- bump_allocator_static< std::__detail::_Hash_node_base* > (item size = 8) at 0x604310 created!
+- mempool at 0x604298 allocated new chunk at 0x7f2cb9a04020
+- mempool at 0x604298 deallocated chunk at 0x7f2cb9a04020
+Testing gjrand32
+	0..4294967295 is range of generator
+	198893 outputs to scan for duplicates [3.03485*sqrt(range)]
+	4.60521 duplicates expected on average
+	0.00999963 is probability of zero duplicates
+	0x1d5dec5f is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated hash table of reserved for 198893 elements
+  - Allocating memory completed (0.00115612 seconds)
+  - Checking PRNG output started...
+    - repeat of 2243727918 found, step 33453
+    - repeat of 386787471 found, step 65063
+    - repeat of 856003959 found, step 155872
+    - repeat of 303667026 found, step 189986
+  - Checking PRNG output completed (0.0205083 seconds)
+- Testing for repeats completed (0.0216726 seconds)
+---
+4 repeats, p-value = 1 - 0.487742
+- bump_allocator_static< std::__detail::_Hash_node_base* > at 0x604310 destroyed!
+ - total_allocations_  = 1
+ - active_allocations_ = 0
+ - high_allocations_   = 1
+ - total_mem_  = 1619272
+ - active_mem_ = 0
+ - high_mem_   = 1619272
+- bump_allocator_static< std::__detail::_Hash_node<unsigned int, false> > at 0x6042d0 destroyed!
+ - total_allocations_  = 198889
+ - active_allocations_ = 0
+ - high_allocations_   = 198889
+ - total_mem_  = 3182224
+ - active_mem_ = 0
+ - high_mem_   = 3182224
+
+Memory usage summary: heap total: 1073815760, heap peak: 1073815568, stack peak: 2816
+         total calls   total memory   failed calls
+ malloc|          5     1073815568              0
+realloc|          4            192              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          6     1073742032
+Histogram for block sizes:
+   16-31              1  11% =========================
+   32-47              2  22% ==================================================
+   64-79              2  22% ==================================================
+  512-527             2  22% ==================================================
+   large              2  22% ==================================================

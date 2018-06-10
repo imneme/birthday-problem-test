@@ -1,0 +1,52 @@
+Testing std::mt19937
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0x98f92605 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated 256 buckets of capacity 2023
+    - allocated 256 bucket counters
+  - Allocating memory completed (1.7483e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.00708314 seconds)
+  - Sorting started...
+  - Sorting completed (0.0364418 seconds)
+  - Scanning for duplicates started...
+    - repeat of 3969736196 found
+    - repeat of 3579212554 found
+    - repeat of 2610777890 found
+    - repeat of 267375670 found
+    - repeat of 3615152961 found
+    - repeat of 2914662216 found
+    - repeat of 2069272147 found
+    - repeat of 411986789 found
+    - repeat of 4022778981 found
+    - repeat of 986307695 found
+    - repeat of 248126331 found
+    - repeat of 1569198204 found
+    - repeat of 260047753 found
+    - repeat of 727714192 found
+    - repeat of 2344107429 found
+    - repeat of 3276511662 found
+    - repeat of 3966177203 found
+    - repeat of 868877244 found
+    - repeat of 3669422015 found
+    - repeat of 2611781084 found
+    - repeat of 4289465067 found
+  - Scanning for duplicates completed (0.000571464 seconds)
+- Testing for repeats completed (0.0441289 seconds)
+---
+21 repeats, p-value = 1 - 0.35631
+
+Memory usage summary: heap total: 4217856, heap peak: 4217856, stack peak: 10576
+         total calls   total memory   failed calls
+ malloc|          3        4217856              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+ 2048-2063            1  33% =========================
+   large              2  66% ==================================================

@@ -1,0 +1,53 @@
+Testing pcg32_fast
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0xd8ea4a7a is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated array of size 414487.
+  - Allocating memory completed (6.493e-06 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.00146701 seconds)
+  - Sorting started...
+  - Sorting completed (0.0542172 seconds)
+  - Scanning for duplicates started...
+    - repeat of 310550970 found
+    - repeat of 727569581 found
+    - repeat of 872602975 found
+    - repeat of 899684823 found
+    - repeat of 1010227086 found
+    - repeat of 1146054550 found
+    - repeat of 1332687733 found
+    - repeat of 1384712984 found
+    - repeat of 1447365312 found
+    - repeat of 1497629136 found
+    - repeat of 1790041537 found
+    - repeat of 2111434924 found
+    - repeat of 2564131256 found
+    - repeat of 2800127056 found
+    - repeat of 2809947371 found
+    - repeat of 3096456161 found
+    - repeat of 3262826971 found
+    - repeat of 3349546071 found
+    - repeat of 3494729376 found
+    - repeat of 3551950391 found
+    - repeat of 3554665841 found
+    - repeat of 3583951457 found
+    - repeat of 3733059980 found
+    - repeat of 4187138394 found
+  - Scanning for duplicates completed (0.000467355 seconds)
+- Testing for repeats completed (0.056173 seconds)
+---
+24 repeats, p-value = 1 - 0.156778
+
+Memory usage summary: heap total: 1730652, heap peak: 1730652, stack peak: 5584
+         total calls   total memory   failed calls
+ malloc|          2        1730652              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+   large              2 100% ==================================================

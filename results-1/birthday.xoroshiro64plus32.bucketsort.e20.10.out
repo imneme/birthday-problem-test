@@ -1,0 +1,56 @@
+Testing xoroshiro64plus32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0xa120041b is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated 256 buckets of capacity 2023
+    - allocated 256 bucket counters
+  - Allocating memory completed (1.7977e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.00350223 seconds)
+  - Sorting started...
+  - Sorting completed (0.0378804 seconds)
+  - Scanning for duplicates started...
+    - repeat of 3613694466 found
+    - repeat of 2056808197 found
+    - repeat of 112761611 found
+    - repeat of 851714576 found
+    - repeat of 4088929835 found
+    - repeat of 3292374326 found
+    - repeat of 4100264767 found
+    - repeat of 3864113762 found
+    - repeat of 399200613 found
+    - repeat of 3550833007 found
+    - repeat of 574101905 found
+    - repeat of 2520255900 found
+    - repeat of 797068199 found
+    - repeat of 3293542830 found
+    - repeat of 4004555189 found
+    - repeat of 3152712138 found
+    - repeat of 975643852 found
+    - repeat of 1380222672 found
+    - repeat of 1316521173 found
+    - repeat of 3066473432 found
+    - repeat of 2325101279 found
+    - repeat of 2933652970 found
+    - repeat of 489109745 found
+    - repeat of 1093769971 found
+    - repeat of 2090544632 found
+  - Scanning for duplicates completed (0.000647152 seconds)
+- Testing for repeats completed (0.0420711 seconds)
+---
+25 repeats, p-value = 1 - 0.112189
+
+Memory usage summary: heap total: 2145280, heap peak: 2145280, stack peak: 5616
+         total calls   total memory   failed calls
+ malloc|          3        2145280              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+ 1024-1039            1  33% =========================
+   large              2  66% ==================================================

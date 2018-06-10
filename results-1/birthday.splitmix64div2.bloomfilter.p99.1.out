@@ -1,0 +1,43 @@
+Testing divided_rng<SplitMix64,2>
+	0..9223372036854775807 is range of generator
+	9216853902 outputs to scan for duplicates [3.03485*sqrt(range)]
+	4.60517 duplicates expected on average
+	0.01 is probability of zero duplicates
+	0x570e937a is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated bloomish filter with 1073741824 64-bit elements (4 bits/entry)
+    - allocated possible-match log with 536870912 64-bit elements
+  - Allocating memory completed (2.9366e-05 seconds)
+  - Phase 1, Gathering repeat candidates started...
+    - 95628102 repeat candidates found
+  - Phase 1, Gathering repeat candidates completed (736.677 seconds)
+  - Reallocating memory started...
+    - Deallocated bloomish filter
+    - Allocated hash table of the same size
+  - Reallocating memory completed (2.97945 seconds)
+  - Phase 2, Storing candidates in hash table started...
+  - Phase 2, Storing candidates in hash table completed (2.12321 seconds)
+  - Phase 3, Testing candidates started...
+    - repeat of 2741831724224104330 found, step 707514426
+    - repeat of 3230176826600434977 found, step 2450506988
+    - repeat of 621061926759647878 found, step 5385889558
+    - repeat of 1654862500664134953 found, step 6687132957
+    - repeat of 6237552120630205909 found, step 6762961300
+    - repeat of 4480533969538275418 found, step 7087996252
+    - repeat of 8386769834030832405 found, step 7458020813
+    - repeat of 396596717782734887 found, step 8542920051
+  - Phase 3, Testing candidates completed (218.081 seconds)
+- Testing for repeats completed (959.861 seconds)
+---
+8 repeats, p-value = 1 - 0.0453308
+
+Memory usage summary: heap total: 22548651009, heap peak: 13958716417, stack peak: 5664
+         total calls   total memory   failed calls
+ malloc|          5    22548651009              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          4    22548578305
+Histogram for block sizes:
+   large              5 100% ==================================================

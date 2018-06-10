@@ -1,0 +1,52 @@
+Testing xoroshiro128plus64
+	0..18446744073709551615 is range of generator
+	27163758263 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20 duplicates expected on average
+	2.06115e-09 is probability of zero duplicates
+	0x5dee224b is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated array of size 27163758263.
+  - Allocating memory completed (1.3333e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (100.587 seconds)
+  - Sorting started...
+  - Sorting completed (4304.41 seconds)
+  - Scanning for duplicates started...
+    - repeat of 143757143406293925 found
+    - repeat of 644128865831128314 found
+    - repeat of 1295435916299511521 found
+    - repeat of 3430542985495091107 found
+    - repeat of 6579732169620791018 found
+    - repeat of 6725924865440013713 found
+    - repeat of 9329749155338143082 found
+    - repeat of 9976806780328226780 found
+    - repeat of 10049903155016515615 found
+    - repeat of 10600274622379586741 found
+    - repeat of 10776077571075257224 found
+    - repeat of 11655010431409796694 found
+    - repeat of 12238057163391397022 found
+    - repeat of 12404270212620747723 found
+    - repeat of 13321195061149230287 found
+    - repeat of 13322565723698250309 found
+    - repeat of 13531651302564675469 found
+    - repeat of 14012600643947908491 found
+    - repeat of 14165375832198842830 found
+    - repeat of 15464744884236785737 found
+    - repeat of 16586613235435556419 found
+    - repeat of 17342609122865080715 found
+    - repeat of 17952221760693445303 found
+  - Scanning for duplicates completed (41.0189 seconds)
+- Testing for repeats completed (4446.01 seconds)
+---
+23 repeats, p-value = 1 - 0.212507
+
+Memory usage summary: heap total: 217310138808, heap peak: 217310138808, stack peak: 5568
+         total calls   total memory   failed calls
+ malloc|          2   217310138808              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+   large              2 100% ==================================================

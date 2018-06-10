@@ -1,0 +1,43 @@
+Testing mcg128
+	0..18446744073709551615 is range of generator
+	13034599790 outputs to scan for duplicates [3.03485*sqrt(range)]
+	4.60517 duplicates expected on average
+	0.01 is probability of zero duplicates
+	0x1dc47d8e is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated 65536 buckets of capacity 248615
+    - allocated 65536 bucket counters
+  - Allocating memory completed (0.000400206 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (597.945 seconds)
+  - Sorting started...
+  - Sorting completed (907.884 seconds)
+  - Scanning for duplicates started...
+    - repeat of 3991385057311400540 found
+    - repeat of 10735102457976534849 found
+    - repeat of 2763647935857703648 found
+    - repeat of 8421478789127948301 found
+    - repeat of 3058213716237243417 found
+    - repeat of 6329436067062764818 found
+    - repeat of 13561642085741585300 found
+    - repeat of 1127899235538991723 found
+    - repeat of 15252011865251283702 found
+    - repeat of 1236875293733851335 found
+    - repeat of 4373549654404877729 found
+    - repeat of 3451812449548098921 found
+    - repeat of 14404154116318229007 found
+  - Scanning for duplicates completed (15.0675 seconds)
+- Testing for repeats completed (1520.9 seconds)
+---
+13 repeats, p-value = 1 - 0.000315911
+
+Memory usage summary: heap total: 130346458112, heap peak: 130346458112, stack peak: 5616
+         total calls   total memory   failed calls
+ malloc|          3   130346458112              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+   large              3 100% ==================================================

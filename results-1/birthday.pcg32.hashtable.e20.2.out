@@ -1,0 +1,45 @@
+Testing pcg32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0x2e491bff is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated hash table of reserved for 414487 elements
+  - Allocating memory completed (0.00299608 seconds)
+  - Checking PRNG output started...
+    - repeat of 353027152 found, step 62107
+    - repeat of 1040527656 found, step 142995
+    - repeat of 1473509340 found, step 163545
+    - repeat of 3964442457 found, step 200407
+    - repeat of 2448244299 found, step 227602
+    - repeat of 650467073 found, step 285515
+    - repeat of 2206243794 found, step 286597
+    - repeat of 3538573770 found, step 298428
+    - repeat of 1200083853 found, step 299975
+    - repeat of 2833502554 found, step 307030
+    - repeat of 2273772618 found, step 316425
+    - repeat of 3655926306 found, step 350804
+    - repeat of 1825379667 found, step 358751
+    - repeat of 2795852985 found, step 367833
+    - repeat of 4258017985 found, step 371107
+    - repeat of 229256379 found, step 387078
+    - repeat of 2854072294 found, step 394320
+    - repeat of 3594392827 found, step 408904
+    - repeat of 3424435820 found, step 412443
+  - Checking PRNG output completed (0.0979196 seconds)
+- Testing for repeats completed (0.100939 seconds)
+---
+19 repeats, p-value = 0.470249
+
+Memory usage summary: heap total: 10260088, heap peak: 10260088, stack peak: 5648
+         total calls   total memory   failed calls
+ malloc|     414470       10260088              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|     414469       10187384
+Histogram for block sizes:
+   16-31         414468  99% ==================================================
+   large              2  <1% 

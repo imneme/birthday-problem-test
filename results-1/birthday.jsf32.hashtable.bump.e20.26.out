@@ -1,0 +1,62 @@
+- bump_allocator_static< std::__detail::_Hash_node<unsigned int, false> > (item size = 16) at 0x6042d0 created!
+- bump_allocator_static< std::__detail::_Hash_node_base* > (item size = 8) at 0x604310 created!
+- mempool at 0x604298 allocated new chunk at 0x7f27bb909020
+- mempool at 0x604298 deallocated chunk at 0x7f27bb909020
+Testing jsf32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0x8ff9447e is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated hash table of reserved for 414487 elements
+  - Allocating memory completed (0.00236294 seconds)
+  - Checking PRNG output started...
+    - repeat of 4259487413 found, step 131390
+    - repeat of 246460205 found, step 146631
+    - repeat of 2561226066 found, step 223102
+    - repeat of 4083028783 found, step 238565
+    - repeat of 43698081 found, step 252487
+    - repeat of 510868124 found, step 252893
+    - repeat of 2172085272 found, step 254887
+    - repeat of 888752588 found, step 302520
+    - repeat of 1199394579 found, step 310231
+    - repeat of 3498882261 found, step 356143
+    - repeat of 1335073827 found, step 360460
+    - repeat of 1995223310 found, step 364776
+    - repeat of 4080161133 found, step 377505
+    - repeat of 1255927942 found, step 390624
+    - repeat of 2262132134 found, step 410620
+  - Checking PRNG output completed (0.0433251 seconds)
+- Testing for repeats completed (0.0457033 seconds)
+---
+15 repeats, p-value = 0.156508
+- bump_allocator_static< std::__detail::_Hash_node_base* > at 0x604310 destroyed!
+ - total_allocations_  = 1
+ - active_allocations_ = 0
+ - high_allocations_   = 1
+ - total_mem_  = 3555896
+ - active_mem_ = 0
+ - high_mem_   = 3555896
+- bump_allocator_static< std::__detail::_Hash_node<unsigned int, false> > at 0x6042d0 destroyed!
+ - total_allocations_  = 414472
+ - active_allocations_ = 0
+ - high_allocations_   = 414472
+ - total_mem_  = 6631552
+ - active_mem_ = 0
+ - high_mem_   = 6631552
+
+Memory usage summary: heap total: 1073815760, heap peak: 1073815568, stack peak: 2816
+         total calls   total memory   failed calls
+ malloc|          5     1073815568              0
+realloc|          4            192              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          6     1073742032
+Histogram for block sizes:
+   16-31              1  11% =========================
+   32-47              2  22% ==================================================
+   64-79              2  22% ==================================================
+  512-527             2  22% ==================================================
+   large              2  22% ==================================================

@@ -1,0 +1,150 @@
+Testing divided_rng<regularized_rng<std::minstd_rand,uint32_t>,3>
+	0..715827881 is range of generator
+	535100 outputs to scan for duplicates [20*sqrt(range)]
+	199.95 duplicates expected on average
+	0 is probability of zero duplicates
+	0x51a1ff3d is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated array of size 535100.
+  - Allocating memory completed (7e-06 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.00298 seconds)
+  - Sorting started...
+  - Sorting completed (0.028566 seconds)
+  - Scanning for duplicates started...
+    - repeat of 1990789 found
+    - repeat of 13528078 found
+    - repeat of 19598831 found
+    - repeat of 20527937 found
+    - repeat of 20642979 found
+    - repeat of 22198635 found
+    - repeat of 25929797 found
+    - repeat of 47813597 found
+    - repeat of 61429106 found
+    - repeat of 70158449 found
+    - repeat of 82215525 found
+    - repeat of 83433469 found
+    - repeat of 83764117 found
+    - repeat of 87320166 found
+    - repeat of 92466834 found
+    - repeat of 95839128 found
+    - repeat of 98906255 found
+    - repeat of 111971507 found
+    - repeat of 112908197 found
+    - repeat of 113628035 found
+    - repeat of 115903180 found
+    - repeat of 115965862 found
+    - repeat of 119674660 found
+    - repeat of 120841115 found
+    - repeat of 128124567 found
+    - repeat of 136693616 found
+    - repeat of 142149003 found
+    - repeat of 153685060 found
+    - repeat of 157867074 found
+    - repeat of 177759985 found
+    - repeat of 178160939 found
+    - repeat of 184883940 found
+    - repeat of 187927239 found
+    - repeat of 198371478 found
+    - repeat of 199643281 found
+    - repeat of 199643281 found
+    - repeat of 219840517 found
+    - repeat of 223126144 found
+    - repeat of 225613998 found
+    - repeat of 228880645 found
+    - repeat of 229858800 found
+    - repeat of 231053697 found
+    - repeat of 231935255 found
+    - repeat of 237467723 found
+    - repeat of 243363743 found
+    - repeat of 250381693 found
+    - repeat of 268704322 found
+    - repeat of 274029124 found
+    - repeat of 275891928 found
+    - repeat of 276282790 found
+    - repeat of 276509843 found
+    - repeat of 281025865 found
+    - repeat of 289278986 found
+    - repeat of 289774163 found
+    - repeat of 292355394 found
+    - repeat of 292369721 found
+    - repeat of 305858257 found
+    - repeat of 311397154 found
+    - repeat of 318066935 found
+    - repeat of 322581538 found
+    - repeat of 327708716 found
+    - repeat of 345232384 found
+    - repeat of 350469764 found
+    - repeat of 351756397 found
+    - repeat of 352719721 found
+    - repeat of 380418444 found
+    - repeat of 387453040 found
+    - repeat of 395294494 found
+    - repeat of 400830175 found
+    - repeat of 408062685 found
+    - repeat of 408070681 found
+    - repeat of 413257314 found
+    - repeat of 418172643 found
+    - repeat of 418217243 found
+    - repeat of 429055268 found
+    - repeat of 433055279 found
+    - repeat of 438902014 found
+    - repeat of 440291121 found
+    - repeat of 442104465 found
+    - repeat of 443093576 found
+    - repeat of 453694370 found
+    - repeat of 455001116 found
+    - repeat of 463870648 found
+    - repeat of 468439754 found
+    - repeat of 474962964 found
+    - repeat of 476519180 found
+    - repeat of 477750542 found
+    - repeat of 480664396 found
+    - repeat of 482526189 found
+    - repeat of 487128545 found
+    - repeat of 503295523 found
+    - repeat of 506457074 found
+    - repeat of 508893762 found
+    - repeat of 513806737 found
+    - repeat of 517961761 found
+    - repeat of 526008663 found
+    - repeat of 526576748 found
+    - repeat of 532229730 found
+    - repeat of 535638751 found
+    - repeat of 543599342 found
+    - repeat of 546458503 found
+    - repeat of 548843413 found
+    - repeat of 558462988 found
+    - repeat of 560211604 found
+    - repeat of 563524347 found
+    - repeat of 566445477 found
+    - repeat of 567931105 found
+    - repeat of 577057702 found
+    - repeat of 581769395 found
+    - repeat of 584178632 found
+    - repeat of 586408662 found
+    - repeat of 590399249 found
+    - repeat of 591372562 found
+    - repeat of 598268475 found
+    - repeat of 623468408 found
+    - repeat of 626802160 found
+    - repeat of 627232420 found
+    - repeat of 627760196 found
+    - repeat of 636085576 found
+    - repeat of 639957575 found
+    - repeat of 640190896 found
+    - repeat of 641695416 found
+    - repeat of 648675421 found
+    - repeat of 664740474 found
+    - repeat of 670740965 found
+    - repeat of 695264955 found
+    - repeat of 695774135 found
+    - repeat of 695874841 found
+    - repeat of 701171518 found
+    - repeat of 704058012 found
+  - Scanning for duplicates completed (0.000325 seconds)
+- Testing for repeats completed (0.03189 seconds)
+---
+130 repeats, p-value = 8.26764e-08

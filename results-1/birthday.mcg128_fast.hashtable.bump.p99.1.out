@@ -1,0 +1,442 @@
+- bump_allocator_static< std::__detail::_Hash_node<unsigned long, false> > (item size = 16) at 0x6042d0 created!
+- bump_allocator_static< std::__detail::_Hash_node_base* > (item size = 8) at 0x604310 created!
+- mempool at 0x604298 allocated new chunk at 0x7f5825b96020
+- mempool at 0x604298: large alloc 137438953144 bytes at 0x7f3825b96020.
+- mempool at 0x604298 allocated new chunk at 0x7f37e5b95020
+- mempool at 0x604298 allocated new chunk at 0x7f37a5b94020
+- mempool at 0x604298 allocated new chunk at 0x7f3765b93020
+- mempool at 0x604298 allocated new chunk at 0x7f3725b92020
+- mempool at 0x604298 allocated new chunk at 0x7f36e5b91020
+- mempool at 0x604298 allocated new chunk at 0x7f36a5b90020
+- mempool at 0x604298 allocated new chunk at 0x7f3665b8f020
+- mempool at 0x604298 allocated new chunk at 0x7f3625b8e020
+- mempool at 0x604298 allocated new chunk at 0x7f35e5b8d020
+- mempool at 0x604298 allocated new chunk at 0x7f35a5b8c020
+- mempool at 0x604298 allocated new chunk at 0x7f3565b8b020
+- mempool at 0x604298 allocated new chunk at 0x7f3525b8a020
+- mempool at 0x604298 allocated new chunk at 0x7f34e5b89020
+- mempool at 0x604298 allocated new chunk at 0x7f34a5b88020
+- mempool at 0x604298 allocated new chunk at 0x7f3465b87020
+- mempool at 0x604298 allocated new chunk at 0x7f3425b86020
+- mempool at 0x604298 allocated new chunk at 0x7f33e5b85020
+- mempool at 0x604298 allocated new chunk at 0x7f33a5b84020
+- mempool at 0x604298 allocated new chunk at 0x7f3365b83020
+- mempool at 0x604298 allocated new chunk at 0x7f3325b82020
+- mempool at 0x604298 allocated new chunk at 0x7f32e5b81020
+- mempool at 0x604298 allocated new chunk at 0x7f32a5b80020
+- mempool at 0x604298 allocated new chunk at 0x7f3265b7f020
+- mempool at 0x604298 allocated new chunk at 0x7f3225b7e020
+- mempool at 0x604298 allocated new chunk at 0x7f31e5b7d020
+- mempool at 0x604298 allocated new chunk at 0x7f31a5b7c020
+- mempool at 0x604298 allocated new chunk at 0x7f3165b7b020
+- mempool at 0x604298 allocated new chunk at 0x7f3125b7a020
+- mempool at 0x604298 allocated new chunk at 0x7f30e5b79020
+- mempool at 0x604298 allocated new chunk at 0x7f30a5b78020
+- mempool at 0x604298 allocated new chunk at 0x7f3065b77020
+- mempool at 0x604298 allocated new chunk at 0x7f3025b76020
+- mempool at 0x604298 allocated new chunk at 0x7f2fe5b75020
+- mempool at 0x604298 allocated new chunk at 0x7f2fa5b74020
+- mempool at 0x604298 allocated new chunk at 0x7f2f65b73020
+- mempool at 0x604298 allocated new chunk at 0x7f2f25b72020
+- mempool at 0x604298 allocated new chunk at 0x7f2ee5b71020
+- mempool at 0x604298 allocated new chunk at 0x7f2ea5b70020
+- mempool at 0x604298 allocated new chunk at 0x7f2e65b6f020
+- mempool at 0x604298 allocated new chunk at 0x7f2e25b6e020
+- mempool at 0x604298 allocated new chunk at 0x7f2de5b6d020
+- mempool at 0x604298 allocated new chunk at 0x7f2da5b6c020
+- mempool at 0x604298 allocated new chunk at 0x7f2d65b6b020
+- mempool at 0x604298 allocated new chunk at 0x7f2d25b6a020
+- mempool at 0x604298 allocated new chunk at 0x7f2ce5b69020
+- mempool at 0x604298 allocated new chunk at 0x7f2ca5b68020
+- mempool at 0x604298 allocated new chunk at 0x7f2c65b67020
+- mempool at 0x604298 allocated new chunk at 0x7f2c25b66020
+- mempool at 0x604298 allocated new chunk at 0x7f2be5b65020
+- mempool at 0x604298 allocated new chunk at 0x7f2ba5b64020
+- mempool at 0x604298 allocated new chunk at 0x7f2b65b63020
+- mempool at 0x604298 allocated new chunk at 0x7f2b25b62020
+- mempool at 0x604298 allocated new chunk at 0x7f2ae5b61020
+- mempool at 0x604298 allocated new chunk at 0x7f2aa5b60020
+- mempool at 0x604298 allocated new chunk at 0x7f2a65b5f020
+- mempool at 0x604298 allocated new chunk at 0x7f2a25b5e020
+- mempool at 0x604298 allocated new chunk at 0x7f29e5b5d020
+- mempool at 0x604298 allocated new chunk at 0x7f29a5b5c020
+- mempool at 0x604298 allocated new chunk at 0x7f2965b5b020
+- mempool at 0x604298 allocated new chunk at 0x7f2925b5a020
+- mempool at 0x604298 allocated new chunk at 0x7f28e5b59020
+- mempool at 0x604298 allocated new chunk at 0x7f28a5b58020
+- mempool at 0x604298 allocated new chunk at 0x7f2865b57020
+- mempool at 0x604298 allocated new chunk at 0x7f2825b56020
+- mempool at 0x604298 allocated new chunk at 0x7f27e5b55020
+- mempool at 0x604298 allocated new chunk at 0x7f27a5b54020
+- mempool at 0x604298 allocated new chunk at 0x7f2765b53020
+- mempool at 0x604298 allocated new chunk at 0x7f2725b52020
+- mempool at 0x604298 allocated new chunk at 0x7f26e5b51020
+- mempool at 0x604298 allocated new chunk at 0x7f26a5b50020
+- mempool at 0x604298 allocated new chunk at 0x7f2665b4f020
+- mempool at 0x604298 allocated new chunk at 0x7f2625b4e020
+- mempool at 0x604298 allocated new chunk at 0x7f25e5b4d020
+- mempool at 0x604298 allocated new chunk at 0x7f25a5b4c020
+- mempool at 0x604298 allocated new chunk at 0x7f2565b4b020
+- mempool at 0x604298 allocated new chunk at 0x7f2525b4a020
+- mempool at 0x604298 allocated new chunk at 0x7f24e5b49020
+- mempool at 0x604298 allocated new chunk at 0x7f24a5b48020
+- mempool at 0x604298 allocated new chunk at 0x7f2465b47020
+- mempool at 0x604298 allocated new chunk at 0x7f2425b46020
+- mempool at 0x604298 allocated new chunk at 0x7f23e5b45020
+- mempool at 0x604298 allocated new chunk at 0x7f23a5b44020
+- mempool at 0x604298 allocated new chunk at 0x7f2365b43020
+- mempool at 0x604298 allocated new chunk at 0x7f2325b42020
+- mempool at 0x604298 allocated new chunk at 0x7f22e5b41020
+- mempool at 0x604298 allocated new chunk at 0x7f22a5b40020
+- mempool at 0x604298 allocated new chunk at 0x7f2265b3f020
+- mempool at 0x604298 allocated new chunk at 0x7f2225b3e020
+- mempool at 0x604298 allocated new chunk at 0x7f21e5b3d020
+- mempool at 0x604298 allocated new chunk at 0x7f21a5b3c020
+- mempool at 0x604298 allocated new chunk at 0x7f2165b3b020
+- mempool at 0x604298 allocated new chunk at 0x7f2125b3a020
+- mempool at 0x604298 allocated new chunk at 0x7f20e5b39020
+- mempool at 0x604298 allocated new chunk at 0x7f20a5b38020
+- mempool at 0x604298 allocated new chunk at 0x7f2065b37020
+- mempool at 0x604298 allocated new chunk at 0x7f2025b36020
+- mempool at 0x604298 allocated new chunk at 0x7f1fe5b35020
+- mempool at 0x604298 allocated new chunk at 0x7f1fa5b34020
+- mempool at 0x604298 allocated new chunk at 0x7f1f65b33020
+- mempool at 0x604298 allocated new chunk at 0x7f1f25b32020
+- mempool at 0x604298 allocated new chunk at 0x7f1ee5b31020
+- mempool at 0x604298 allocated new chunk at 0x7f1ea5b30020
+- mempool at 0x604298 allocated new chunk at 0x7f1e65b2f020
+- mempool at 0x604298 allocated new chunk at 0x7f1e25b2e020
+- mempool at 0x604298 allocated new chunk at 0x7f1de5b2d020
+- mempool at 0x604298 allocated new chunk at 0x7f1da5b2c020
+- mempool at 0x604298 allocated new chunk at 0x7f1d65b2b020
+- mempool at 0x604298 allocated new chunk at 0x7f1d25b2a020
+- mempool at 0x604298 allocated new chunk at 0x7f1ce5b29020
+- mempool at 0x604298 allocated new chunk at 0x7f1ca5b28020
+- mempool at 0x604298 allocated new chunk at 0x7f1c65b27020
+- mempool at 0x604298 allocated new chunk at 0x7f1c25b26020
+- mempool at 0x604298 allocated new chunk at 0x7f1be5b25020
+- mempool at 0x604298 allocated new chunk at 0x7f1ba5b24020
+- mempool at 0x604298 allocated new chunk at 0x7f1b65b23020
+- mempool at 0x604298 allocated new chunk at 0x7f1b25b22020
+- mempool at 0x604298 allocated new chunk at 0x7f1ae5b21020
+- mempool at 0x604298 allocated new chunk at 0x7f1aa5b20020
+- mempool at 0x604298 allocated new chunk at 0x7f1a65b1f020
+- mempool at 0x604298 allocated new chunk at 0x7f1a25b1e020
+- mempool at 0x604298 allocated new chunk at 0x7f19e5b1d020
+- mempool at 0x604298 allocated new chunk at 0x7f19a5b1c020
+- mempool at 0x604298 allocated new chunk at 0x7f1965b1b020
+- mempool at 0x604298 allocated new chunk at 0x7f1925b1a020
+- mempool at 0x604298 allocated new chunk at 0x7f18e5b19020
+- mempool at 0x604298 allocated new chunk at 0x7f18a5b18020
+- mempool at 0x604298 allocated new chunk at 0x7f1865b17020
+- mempool at 0x604298 allocated new chunk at 0x7f1825b16020
+- mempool at 0x604298 allocated new chunk at 0x7f17e5b15020
+- mempool at 0x604298 allocated new chunk at 0x7f17a5b14020
+- mempool at 0x604298 allocated new chunk at 0x7f1765b13020
+- mempool at 0x604298 allocated new chunk at 0x7f1725b12020
+- mempool at 0x604298 allocated new chunk at 0x7f16e5b11020
+- mempool at 0x604298 allocated new chunk at 0x7f16a5b10020
+- mempool at 0x604298 allocated new chunk at 0x7f1665b0f020
+- mempool at 0x604298 allocated new chunk at 0x7f1625b0e020
+- mempool at 0x604298 allocated new chunk at 0x7f15e5b0d020
+- mempool at 0x604298 allocated new chunk at 0x7f15a5b0c020
+- mempool at 0x604298 allocated new chunk at 0x7f1565b0b020
+- mempool at 0x604298 allocated new chunk at 0x7f1525b0a020
+- mempool at 0x604298 allocated new chunk at 0x7f14e5b09020
+- mempool at 0x604298 allocated new chunk at 0x7f14a5b08020
+- mempool at 0x604298 allocated new chunk at 0x7f1465b07020
+- mempool at 0x604298 allocated new chunk at 0x7f1425b06020
+- mempool at 0x604298 allocated new chunk at 0x7f13e5b05020
+- mempool at 0x604298 allocated new chunk at 0x7f13a5b04020
+- mempool at 0x604298 allocated new chunk at 0x7f1365b03020
+- mempool at 0x604298 allocated new chunk at 0x7f1325b02020
+- mempool at 0x604298 allocated new chunk at 0x7f12e5b01020
+- mempool at 0x604298 allocated new chunk at 0x7f12a5b00020
+- mempool at 0x604298 allocated new chunk at 0x7f1265aff020
+- mempool at 0x604298 allocated new chunk at 0x7f1225afe020
+- mempool at 0x604298 allocated new chunk at 0x7f11e5afd020
+- mempool at 0x604298 allocated new chunk at 0x7f11a5afc020
+- mempool at 0x604298 allocated new chunk at 0x7f1165afb020
+- mempool at 0x604298 allocated new chunk at 0x7f1125afa020
+- mempool at 0x604298 allocated new chunk at 0x7f10e5af9020
+- mempool at 0x604298 allocated new chunk at 0x7f10a5af8020
+- mempool at 0x604298 allocated new chunk at 0x7f1065af7020
+- mempool at 0x604298 allocated new chunk at 0x7f1025af6020
+- mempool at 0x604298 allocated new chunk at 0x7f0fe5af5020
+- mempool at 0x604298 allocated new chunk at 0x7f0fa5af4020
+- mempool at 0x604298 allocated new chunk at 0x7f0f65af3020
+- mempool at 0x604298 allocated new chunk at 0x7f0f25af2020
+- mempool at 0x604298 allocated new chunk at 0x7f0ee5af1020
+- mempool at 0x604298 allocated new chunk at 0x7f0ea5af0020
+- mempool at 0x604298 allocated new chunk at 0x7f0e65aef020
+- mempool at 0x604298 allocated new chunk at 0x7f0e25aee020
+- mempool at 0x604298 allocated new chunk at 0x7f0de5aed020
+- mempool at 0x604298 allocated new chunk at 0x7f0da5aec020
+- mempool at 0x604298 allocated new chunk at 0x7f0d65aeb020
+- mempool at 0x604298 allocated new chunk at 0x7f0d25aea020
+- mempool at 0x604298 allocated new chunk at 0x7f0ce5ae9020
+- mempool at 0x604298 allocated new chunk at 0x7f0ca5ae8020
+- mempool at 0x604298 allocated new chunk at 0x7f0c65ae7020
+- mempool at 0x604298 allocated new chunk at 0x7f0c25ae6020
+- mempool at 0x604298 allocated new chunk at 0x7f0be5ae5020
+- mempool at 0x604298 allocated new chunk at 0x7f0ba5ae4020
+- mempool at 0x604298 allocated new chunk at 0x7f0b65ae3020
+- mempool at 0x604298 allocated new chunk at 0x7f0b25ae2020
+- mempool at 0x604298 allocated new chunk at 0x7f0ae5ae1020
+- mempool at 0x604298 allocated new chunk at 0x7f0aa5ae0020
+- mempool at 0x604298 allocated new chunk at 0x7f0a65adf020
+- mempool at 0x604298 allocated new chunk at 0x7f0a25ade020
+- mempool at 0x604298 allocated new chunk at 0x7f09e5add020
+- mempool at 0x604298 allocated new chunk at 0x7f09a5adc020
+- mempool at 0x604298 allocated new chunk at 0x7f0965adb020
+- mempool at 0x604298 allocated new chunk at 0x7f0925ada020
+- mempool at 0x604298 allocated new chunk at 0x7f08e5ad9020
+- mempool at 0x604298 allocated new chunk at 0x7f08a5ad8020
+- mempool at 0x604298 allocated new chunk at 0x7f0865ad7020
+- mempool at 0x604298 allocated new chunk at 0x7f0825ad6020
+- mempool at 0x604298 allocated new chunk at 0x7f07e5ad5020
+- mempool at 0x604298 allocated new chunk at 0x7f07a5ad4020
+- mempool at 0x604298: large dealloc 137438953144 bytes at 0x7f3825b96020.
+- mempool at 0x604298 deallocated chunk at 0x7f07a5ad4020
+- mempool at 0x604298 deallocated chunk at 0x7f07e5ad5020
+- mempool at 0x604298 deallocated chunk at 0x7f0825ad6020
+- mempool at 0x604298 deallocated chunk at 0x7f0865ad7020
+- mempool at 0x604298 deallocated chunk at 0x7f08a5ad8020
+- mempool at 0x604298 deallocated chunk at 0x7f08e5ad9020
+- mempool at 0x604298 deallocated chunk at 0x7f0925ada020
+- mempool at 0x604298 deallocated chunk at 0x7f0965adb020
+- mempool at 0x604298 deallocated chunk at 0x7f09a5adc020
+- mempool at 0x604298 deallocated chunk at 0x7f09e5add020
+- mempool at 0x604298 deallocated chunk at 0x7f0a25ade020
+- mempool at 0x604298 deallocated chunk at 0x7f0a65adf020
+- mempool at 0x604298 deallocated chunk at 0x7f0aa5ae0020
+- mempool at 0x604298 deallocated chunk at 0x7f0ae5ae1020
+- mempool at 0x604298 deallocated chunk at 0x7f0b25ae2020
+- mempool at 0x604298 deallocated chunk at 0x7f0b65ae3020
+- mempool at 0x604298 deallocated chunk at 0x7f0ba5ae4020
+- mempool at 0x604298 deallocated chunk at 0x7f0be5ae5020
+- mempool at 0x604298 deallocated chunk at 0x7f0c25ae6020
+- mempool at 0x604298 deallocated chunk at 0x7f0c65ae7020
+- mempool at 0x604298 deallocated chunk at 0x7f0ca5ae8020
+- mempool at 0x604298 deallocated chunk at 0x7f0ce5ae9020
+- mempool at 0x604298 deallocated chunk at 0x7f0d25aea020
+- mempool at 0x604298 deallocated chunk at 0x7f0d65aeb020
+- mempool at 0x604298 deallocated chunk at 0x7f0da5aec020
+- mempool at 0x604298 deallocated chunk at 0x7f0de5aed020
+- mempool at 0x604298 deallocated chunk at 0x7f0e25aee020
+- mempool at 0x604298 deallocated chunk at 0x7f0e65aef020
+- mempool at 0x604298 deallocated chunk at 0x7f0ea5af0020
+- mempool at 0x604298 deallocated chunk at 0x7f0ee5af1020
+- mempool at 0x604298 deallocated chunk at 0x7f0f25af2020
+- mempool at 0x604298 deallocated chunk at 0x7f0f65af3020
+- mempool at 0x604298 deallocated chunk at 0x7f0fa5af4020
+- mempool at 0x604298 deallocated chunk at 0x7f0fe5af5020
+- mempool at 0x604298 deallocated chunk at 0x7f1025af6020
+- mempool at 0x604298 deallocated chunk at 0x7f1065af7020
+- mempool at 0x604298 deallocated chunk at 0x7f10a5af8020
+- mempool at 0x604298 deallocated chunk at 0x7f10e5af9020
+- mempool at 0x604298 deallocated chunk at 0x7f1125afa020
+- mempool at 0x604298 deallocated chunk at 0x7f1165afb020
+- mempool at 0x604298 deallocated chunk at 0x7f11a5afc020
+- mempool at 0x604298 deallocated chunk at 0x7f11e5afd020
+- mempool at 0x604298 deallocated chunk at 0x7f1225afe020
+- mempool at 0x604298 deallocated chunk at 0x7f1265aff020
+- mempool at 0x604298 deallocated chunk at 0x7f12a5b00020
+- mempool at 0x604298 deallocated chunk at 0x7f12e5b01020
+- mempool at 0x604298 deallocated chunk at 0x7f1325b02020
+- mempool at 0x604298 deallocated chunk at 0x7f1365b03020
+- mempool at 0x604298 deallocated chunk at 0x7f13a5b04020
+- mempool at 0x604298 deallocated chunk at 0x7f13e5b05020
+- mempool at 0x604298 deallocated chunk at 0x7f1425b06020
+- mempool at 0x604298 deallocated chunk at 0x7f1465b07020
+- mempool at 0x604298 deallocated chunk at 0x7f14a5b08020
+- mempool at 0x604298 deallocated chunk at 0x7f14e5b09020
+- mempool at 0x604298 deallocated chunk at 0x7f1525b0a020
+- mempool at 0x604298 deallocated chunk at 0x7f1565b0b020
+- mempool at 0x604298 deallocated chunk at 0x7f15a5b0c020
+- mempool at 0x604298 deallocated chunk at 0x7f15e5b0d020
+- mempool at 0x604298 deallocated chunk at 0x7f1625b0e020
+- mempool at 0x604298 deallocated chunk at 0x7f1665b0f020
+- mempool at 0x604298 deallocated chunk at 0x7f16a5b10020
+- mempool at 0x604298 deallocated chunk at 0x7f16e5b11020
+- mempool at 0x604298 deallocated chunk at 0x7f1725b12020
+- mempool at 0x604298 deallocated chunk at 0x7f1765b13020
+- mempool at 0x604298 deallocated chunk at 0x7f17a5b14020
+- mempool at 0x604298 deallocated chunk at 0x7f17e5b15020
+- mempool at 0x604298 deallocated chunk at 0x7f1825b16020
+- mempool at 0x604298 deallocated chunk at 0x7f1865b17020
+- mempool at 0x604298 deallocated chunk at 0x7f18a5b18020
+- mempool at 0x604298 deallocated chunk at 0x7f18e5b19020
+- mempool at 0x604298 deallocated chunk at 0x7f1925b1a020
+- mempool at 0x604298 deallocated chunk at 0x7f1965b1b020
+- mempool at 0x604298 deallocated chunk at 0x7f19a5b1c020
+- mempool at 0x604298 deallocated chunk at 0x7f19e5b1d020
+- mempool at 0x604298 deallocated chunk at 0x7f1a25b1e020
+- mempool at 0x604298 deallocated chunk at 0x7f1a65b1f020
+- mempool at 0x604298 deallocated chunk at 0x7f1aa5b20020
+- mempool at 0x604298 deallocated chunk at 0x7f1ae5b21020
+- mempool at 0x604298 deallocated chunk at 0x7f1b25b22020
+- mempool at 0x604298 deallocated chunk at 0x7f1b65b23020
+- mempool at 0x604298 deallocated chunk at 0x7f1ba5b24020
+- mempool at 0x604298 deallocated chunk at 0x7f1be5b25020
+- mempool at 0x604298 deallocated chunk at 0x7f1c25b26020
+- mempool at 0x604298 deallocated chunk at 0x7f1c65b27020
+- mempool at 0x604298 deallocated chunk at 0x7f1ca5b28020
+- mempool at 0x604298 deallocated chunk at 0x7f1ce5b29020
+- mempool at 0x604298 deallocated chunk at 0x7f1d25b2a020
+- mempool at 0x604298 deallocated chunk at 0x7f1d65b2b020
+- mempool at 0x604298 deallocated chunk at 0x7f1da5b2c020
+- mempool at 0x604298 deallocated chunk at 0x7f1de5b2d020
+- mempool at 0x604298 deallocated chunk at 0x7f1e25b2e020
+- mempool at 0x604298 deallocated chunk at 0x7f1e65b2f020
+- mempool at 0x604298 deallocated chunk at 0x7f1ea5b30020
+- mempool at 0x604298 deallocated chunk at 0x7f1ee5b31020
+- mempool at 0x604298 deallocated chunk at 0x7f1f25b32020
+- mempool at 0x604298 deallocated chunk at 0x7f1f65b33020
+- mempool at 0x604298 deallocated chunk at 0x7f1fa5b34020
+- mempool at 0x604298 deallocated chunk at 0x7f1fe5b35020
+- mempool at 0x604298 deallocated chunk at 0x7f2025b36020
+- mempool at 0x604298 deallocated chunk at 0x7f2065b37020
+- mempool at 0x604298 deallocated chunk at 0x7f20a5b38020
+- mempool at 0x604298 deallocated chunk at 0x7f20e5b39020
+- mempool at 0x604298 deallocated chunk at 0x7f2125b3a020
+- mempool at 0x604298 deallocated chunk at 0x7f2165b3b020
+- mempool at 0x604298 deallocated chunk at 0x7f21a5b3c020
+- mempool at 0x604298 deallocated chunk at 0x7f21e5b3d020
+- mempool at 0x604298 deallocated chunk at 0x7f2225b3e020
+- mempool at 0x604298 deallocated chunk at 0x7f2265b3f020
+- mempool at 0x604298 deallocated chunk at 0x7f22a5b40020
+- mempool at 0x604298 deallocated chunk at 0x7f22e5b41020
+- mempool at 0x604298 deallocated chunk at 0x7f2325b42020
+- mempool at 0x604298 deallocated chunk at 0x7f2365b43020
+- mempool at 0x604298 deallocated chunk at 0x7f23a5b44020
+- mempool at 0x604298 deallocated chunk at 0x7f23e5b45020
+- mempool at 0x604298 deallocated chunk at 0x7f2425b46020
+- mempool at 0x604298 deallocated chunk at 0x7f2465b47020
+- mempool at 0x604298 deallocated chunk at 0x7f24a5b48020
+- mempool at 0x604298 deallocated chunk at 0x7f24e5b49020
+- mempool at 0x604298 deallocated chunk at 0x7f2525b4a020
+- mempool at 0x604298 deallocated chunk at 0x7f2565b4b020
+- mempool at 0x604298 deallocated chunk at 0x7f25a5b4c020
+- mempool at 0x604298 deallocated chunk at 0x7f25e5b4d020
+- mempool at 0x604298 deallocated chunk at 0x7f2625b4e020
+- mempool at 0x604298 deallocated chunk at 0x7f2665b4f020
+- mempool at 0x604298 deallocated chunk at 0x7f26a5b50020
+- mempool at 0x604298 deallocated chunk at 0x7f26e5b51020
+- mempool at 0x604298 deallocated chunk at 0x7f2725b52020
+- mempool at 0x604298 deallocated chunk at 0x7f2765b53020
+- mempool at 0x604298 deallocated chunk at 0x7f27a5b54020
+- mempool at 0x604298 deallocated chunk at 0x7f27e5b55020
+- mempool at 0x604298 deallocated chunk at 0x7f2825b56020
+- mempool at 0x604298 deallocated chunk at 0x7f2865b57020
+- mempool at 0x604298 deallocated chunk at 0x7f28a5b58020
+- mempool at 0x604298 deallocated chunk at 0x7f28e5b59020
+- mempool at 0x604298 deallocated chunk at 0x7f2925b5a020
+- mempool at 0x604298 deallocated chunk at 0x7f2965b5b020
+- mempool at 0x604298 deallocated chunk at 0x7f29a5b5c020
+- mempool at 0x604298 deallocated chunk at 0x7f29e5b5d020
+- mempool at 0x604298 deallocated chunk at 0x7f2a25b5e020
+- mempool at 0x604298 deallocated chunk at 0x7f2a65b5f020
+- mempool at 0x604298 deallocated chunk at 0x7f2aa5b60020
+- mempool at 0x604298 deallocated chunk at 0x7f2ae5b61020
+- mempool at 0x604298 deallocated chunk at 0x7f2b25b62020
+- mempool at 0x604298 deallocated chunk at 0x7f2b65b63020
+- mempool at 0x604298 deallocated chunk at 0x7f2ba5b64020
+- mempool at 0x604298 deallocated chunk at 0x7f2be5b65020
+- mempool at 0x604298 deallocated chunk at 0x7f2c25b66020
+- mempool at 0x604298 deallocated chunk at 0x7f2c65b67020
+- mempool at 0x604298 deallocated chunk at 0x7f2ca5b68020
+- mempool at 0x604298 deallocated chunk at 0x7f2ce5b69020
+- mempool at 0x604298 deallocated chunk at 0x7f2d25b6a020
+- mempool at 0x604298 deallocated chunk at 0x7f2d65b6b020
+- mempool at 0x604298 deallocated chunk at 0x7f2da5b6c020
+- mempool at 0x604298 deallocated chunk at 0x7f2de5b6d020
+- mempool at 0x604298 deallocated chunk at 0x7f2e25b6e020
+- mempool at 0x604298 deallocated chunk at 0x7f2e65b6f020
+- mempool at 0x604298 deallocated chunk at 0x7f2ea5b70020
+- mempool at 0x604298 deallocated chunk at 0x7f2ee5b71020
+- mempool at 0x604298 deallocated chunk at 0x7f2f25b72020
+- mempool at 0x604298 deallocated chunk at 0x7f2f65b73020
+- mempool at 0x604298 deallocated chunk at 0x7f2fa5b74020
+- mempool at 0x604298 deallocated chunk at 0x7f2fe5b75020
+- mempool at 0x604298 deallocated chunk at 0x7f3025b76020
+- mempool at 0x604298 deallocated chunk at 0x7f3065b77020
+- mempool at 0x604298 deallocated chunk at 0x7f30a5b78020
+- mempool at 0x604298 deallocated chunk at 0x7f30e5b79020
+- mempool at 0x604298 deallocated chunk at 0x7f3125b7a020
+- mempool at 0x604298 deallocated chunk at 0x7f3165b7b020
+- mempool at 0x604298 deallocated chunk at 0x7f31a5b7c020
+- mempool at 0x604298 deallocated chunk at 0x7f31e5b7d020
+- mempool at 0x604298 deallocated chunk at 0x7f3225b7e020
+- mempool at 0x604298 deallocated chunk at 0x7f3265b7f020
+- mempool at 0x604298 deallocated chunk at 0x7f32a5b80020
+- mempool at 0x604298 deallocated chunk at 0x7f32e5b81020
+- mempool at 0x604298 deallocated chunk at 0x7f3325b82020
+- mempool at 0x604298 deallocated chunk at 0x7f3365b83020
+- mempool at 0x604298 deallocated chunk at 0x7f33a5b84020
+- mempool at 0x604298 deallocated chunk at 0x7f33e5b85020
+- mempool at 0x604298 deallocated chunk at 0x7f3425b86020
+- mempool at 0x604298 deallocated chunk at 0x7f3465b87020
+- mempool at 0x604298 deallocated chunk at 0x7f34a5b88020
+- mempool at 0x604298 deallocated chunk at 0x7f34e5b89020
+- mempool at 0x604298 deallocated chunk at 0x7f3525b8a020
+- mempool at 0x604298 deallocated chunk at 0x7f3565b8b020
+- mempool at 0x604298 deallocated chunk at 0x7f35a5b8c020
+- mempool at 0x604298 deallocated chunk at 0x7f35e5b8d020
+- mempool at 0x604298 deallocated chunk at 0x7f3625b8e020
+- mempool at 0x604298 deallocated chunk at 0x7f3665b8f020
+- mempool at 0x604298 deallocated chunk at 0x7f36a5b90020
+- mempool at 0x604298 deallocated chunk at 0x7f36e5b91020
+- mempool at 0x604298 deallocated chunk at 0x7f3725b92020
+- mempool at 0x604298 deallocated chunk at 0x7f3765b93020
+- mempool at 0x604298 deallocated chunk at 0x7f37a5b94020
+- mempool at 0x604298 deallocated chunk at 0x7f37e5b95020
+- mempool at 0x604298 deallocated chunk at 0x7f5825b96020
+Testing mcg128_fast
+	0..18446744073709551615 is range of generator
+	13034599790 outputs to scan for duplicates [3.03485*sqrt(range)]
+	4.60517 duplicates expected on average
+	0.01 is probability of zero duplicates
+	0x9e87042c is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated hash table of reserved for 13034599790 elements
+  - Allocating memory completed (44.1347 seconds)
+  - Checking PRNG output started...
+    - repeat of 648438061807714768 found, step 5402859496
+    - repeat of 3241521016101837239 found, step 10164892319
+    - repeat of 2869712217731892897 found, step 10987638881
+    - repeat of 1591661543095645804 found, step 11560102386
+    - repeat of 10373260162007513307 found, step 11841255348
+  - Checking PRNG output completed (4460.94 seconds)
+- Testing for repeats completed (4505.08 seconds)
+---
+5 repeats, p-value = 1 - 0.315133
+- bump_allocator_static< std::__detail::_Hash_node_base* > at 0x604310 destroyed!
+ - total_allocations_  = 1
+ - active_allocations_ = 0
+ - high_allocations_   = 1
+ - total_mem_  = 137438953144
+ - active_mem_ = 0
+ - high_mem_   = 137438953144
+- bump_allocator_static< std::__detail::_Hash_node<unsigned long, false> > at 0x6042d0 destroyed!
+ - total_allocations_  = 13034599785
+ - active_allocations_ = 0
+ - high_allocations_   = 13034599785
+ - total_mem_  = 208553596560
+ - active_mem_ = 0
+ - high_mem_   = 208553596560
+
+Memory usage summary: heap total: 346818685864, heap peak: 346818685672, stack peak: 5744
+         total calls   total memory   failed calls
+ malloc|        394   346818685672              0
+realloc|          4            192              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|        395   346818612136
+Histogram for block sizes:
+   16-31            195  48% =================================================
+   32-47              2  <1% 
+   64-79              2  <1% 
+  512-527             2  <1% 
+   large            197  49% ==================================================

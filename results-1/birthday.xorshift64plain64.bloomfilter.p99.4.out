@@ -1,0 +1,35 @@
+Testing xorshift64plain64a
+	0..18446744073709551615 is range of generator
+	13034599790 outputs to scan for duplicates [3.03485*sqrt(range)]
+	4.60517 duplicates expected on average
+	0.01 is probability of zero duplicates
+	0xec440d57 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated bloomish filter with 1073741824 64-bit elements (3 bits/entry)
+    - allocated possible-match log with 536870912 64-bit elements
+  - Allocating memory completed (3.22e-05 seconds)
+  - Phase 1, Gathering repeat candidates started...
+    - 362469320 repeat candidates found
+  - Phase 1, Gathering repeat candidates completed (1113.24 seconds)
+  - Reallocating memory started...
+    - Deallocated bloomish filter
+    - Allocated hash table of the same size
+  - Reallocating memory completed (3.26851 seconds)
+  - Phase 2, Storing candidates in hash table started...
+  - Phase 2, Storing candidates in hash table completed (13.4337 seconds)
+  - Phase 3, Testing candidates started...
+  - Phase 3, Testing candidates completed (550.783 seconds)
+- Testing for repeats completed (1680.72 seconds)
+---
+0 repeats, p-value = 0.01
+
+Memory usage summary: heap total: 22548651009, heap peak: 13958716417, stack peak: 5664
+         total calls   total memory   failed calls
+ malloc|          5    22548651009              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          4    22548578305
+Histogram for block sizes:
+   large              5 100% ==================================================

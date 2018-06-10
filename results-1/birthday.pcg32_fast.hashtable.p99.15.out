@@ -1,0 +1,35 @@
+Testing pcg32_fast
+	0..4294967295 is range of generator
+	198893 outputs to scan for duplicates [3.03485*sqrt(range)]
+	4.60521 duplicates expected on average
+	0.00999963 is probability of zero duplicates
+	0x73ea3174 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated hash table of reserved for 198893 elements
+  - Allocating memory completed (0.00141586 seconds)
+  - Checking PRNG output started...
+    - repeat of 3591551178 found, step 85459
+    - repeat of 956008849 found, step 87657
+    - repeat of 1609375030 found, step 134524
+    - repeat of 4277143740 found, step 156003
+    - repeat of 1261908582 found, step 173945
+    - repeat of 15590621 found, step 174323
+    - repeat of 3845160065 found, step 180594
+    - repeat of 907214238 found, step 181580
+    - repeat of 1699676195 found, step 182145
+  - Checking PRNG output completed (0.0385799 seconds)
+- Testing for repeats completed (0.0400119 seconds)
+---
+9 repeats, p-value = 1 - 0.0196605
+
+Memory usage summary: heap total: 4874120, heap peak: 4874120, stack peak: 5648
+         total calls   total memory   failed calls
+ malloc|     198886        4874120              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|     198885        4801416
+Histogram for block sizes:
+   16-31         198884  99% ==================================================
+   large              2  <1% 

@@ -1,0 +1,63 @@
+Testing pcg32_fast
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0xfcd5024c is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated array of size 414487.
+  - Allocating memory completed (9.23e-06 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.00208048 seconds)
+  - Sorting started...
+  - Sorting completed (0.0577995 seconds)
+  - Scanning for duplicates started...
+    - repeat of 11169579 found
+    - repeat of 265540767 found
+    - repeat of 327750909 found
+    - repeat of 331882599 found
+    - repeat of 494885436 found
+    - repeat of 620575349 found
+    - repeat of 761332704 found
+    - repeat of 1213583304 found
+    - repeat of 1233193320 found
+    - repeat of 1320218538 found
+    - repeat of 1373659640 found
+    - repeat of 1401210810 found
+    - repeat of 1427569957 found
+    - repeat of 1484877754 found
+    - repeat of 1575812654 found
+    - repeat of 1670925534 found
+    - repeat of 1692548164 found
+    - repeat of 1792835014 found
+    - repeat of 1850877836 found
+    - repeat of 1975076656 found
+    - repeat of 2320067443 found
+    - repeat of 2355741118 found
+    - repeat of 2437110832 found
+    - repeat of 2546515235 found
+    - repeat of 2600875921 found
+    - repeat of 2621587840 found
+    - repeat of 2728427040 found
+    - repeat of 2790215790 found
+    - repeat of 3225917040 found
+    - repeat of 3985600252 found
+    - repeat of 4189620931 found
+    - repeat of 4191338487 found
+    - repeat of 4232526978 found
+    - repeat of 4286716237 found
+  - Scanning for duplicates completed (0.000502881 seconds)
+- Testing for repeats completed (0.0604136 seconds)
+---
+34 repeats, p-value = 1 - 0.00148914
+
+Memory usage summary: heap total: 1730652, heap peak: 1730652, stack peak: 5584
+         total calls   total memory   failed calls
+ malloc|          2        1730652              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+   large              2 100% ==================================================

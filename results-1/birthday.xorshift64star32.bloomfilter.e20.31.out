@@ -1,0 +1,51 @@
+Testing xorshift64star32a
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	19.9994 duplicates expected on average
+	2.06239e-09 is probability of zero duplicates
+	0x7297b812 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated bloomish filter with 32768 64-bit elements (3 bits/entry)
+    - allocated possible-match log with 16384 32-bit elements
+  - Allocating memory completed (1.2139e-05 seconds)
+  - Phase 1, Gathering repeat candidates started...
+    - 15484 repeat candidates found
+  - Phase 1, Gathering repeat candidates completed (0.00779387 seconds)
+  - Reallocating memory started...
+    - Deallocated bloomish filter
+    - Allocated hash table of the same size
+  - Reallocating memory completed (0.00014139 seconds)
+  - Phase 2, Storing candidates in hash table started...
+  - Phase 2, Storing candidates in hash table completed (0.000167571 seconds)
+  - Phase 3, Testing candidates started...
+    - repeat of 2586541827 found, step 133964
+    - repeat of 1883682135 found, step 187381
+    - repeat of 3003597319 found, step 191889
+    - repeat of 1332481618 found, step 205029
+    - repeat of 3255789600 found, step 229784
+    - repeat of 4277582862 found, step 266257
+    - repeat of 301872408 found, step 274223
+    - repeat of 1621881305 found, step 277069
+    - repeat of 1992030712 found, step 312382
+    - repeat of 4064041810 found, step 317333
+    - repeat of 181577662 found, step 321475
+    - repeat of 68099659 found, step 365434
+    - repeat of 3717724363 found, step 366834
+    - repeat of 2558595244 found, step 372511
+    - repeat of 1466476514 found, step 385351
+  - Phase 3, Testing candidates completed (0.00861353 seconds)
+- Testing for repeats completed (0.0167723 seconds)
+---
+15 repeats, p-value = 0.156544
+
+Memory usage summary: heap total: 564225, heap peak: 400384, stack peak: 5664
+         total calls   total memory   failed calls
+ malloc|          5         564225              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          4         491521
+Histogram for block sizes:
+32768-32783           1  20% ============
+   large              4  80% ==================================================

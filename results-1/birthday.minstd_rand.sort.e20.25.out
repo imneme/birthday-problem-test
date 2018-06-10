@@ -1,0 +1,29 @@
+Testing std::minstd_rand
+	1..2147483646 is range of generator
+	293086 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20 duplicates expected on average
+	2.06113e-09 is probability of zero duplicates
+	0xbf5de3f is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated array of size 293086.
+  - Allocating memory completed (1.1954e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.00513805 seconds)
+  - Sorting started...
+  - Sorting completed (0.0418473 seconds)
+  - Scanning for duplicates started...
+  - Scanning for duplicates completed (0.000391362 seconds)
+- Testing for repeats completed (0.0474102 seconds)
+---
+0 repeats, p-value = 2.06113e-09
+
+Memory usage summary: heap total: 2417392, heap peak: 2417392, stack peak: 5568
+         total calls   total memory   failed calls
+ malloc|          2        2417392              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+   large              2 100% ==================================================

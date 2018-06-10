@@ -1,0 +1,57 @@
+Testing xoroshiro64star32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0xc21e9cc1 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated array of size 414487.
+  - Allocating memory completed (8.046e-06 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.00274484 seconds)
+  - Sorting started...
+  - Sorting completed (0.0592566 seconds)
+  - Scanning for duplicates started...
+    - repeat of 155247637 found
+    - repeat of 209500784 found
+    - repeat of 793841052 found
+    - repeat of 821595708 found
+    - repeat of 942038716 found
+    - repeat of 983016080 found
+    - repeat of 1055391208 found
+    - repeat of 1235283581 found
+    - repeat of 1382352307 found
+    - repeat of 1579455597 found
+    - repeat of 1691216673 found
+    - repeat of 1737705206 found
+    - repeat of 1760562292 found
+    - repeat of 1959600470 found
+    - repeat of 2007183201 found
+    - repeat of 2149192123 found
+    - repeat of 2521297383 found
+    - repeat of 2625033179 found
+    - repeat of 2647964110 found
+    - repeat of 3322395030 found
+    - repeat of 3380177722 found
+    - repeat of 3757377205 found
+    - repeat of 3793446354 found
+    - repeat of 3964445426 found
+    - repeat of 4040313095 found
+    - repeat of 4055349972 found
+    - repeat of 4116931497 found
+    - repeat of 4211897174 found
+  - Scanning for duplicates completed (0.000499541 seconds)
+- Testing for repeats completed (0.0625267 seconds)
+---
+28 repeats, p-value = 1 - 0.0343352
+
+Memory usage summary: heap total: 1730652, heap peak: 1730652, stack peak: 5568
+         total calls   total memory   failed calls
+ malloc|          2        1730652              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+   large              2 100% ==================================================

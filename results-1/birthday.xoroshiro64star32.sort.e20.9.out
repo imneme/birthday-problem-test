@@ -1,0 +1,49 @@
+Testing xoroshiro64star32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0x9604b3dc is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated array of size 414487.
+  - Allocating memory completed (3.976e-06 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.0019013 seconds)
+  - Sorting started...
+  - Sorting completed (0.0595785 seconds)
+  - Scanning for duplicates started...
+    - repeat of 120239732 found
+    - repeat of 162762547 found
+    - repeat of 203075569 found
+    - repeat of 210205774 found
+    - repeat of 273033691 found
+    - repeat of 451343996 found
+    - repeat of 1122452654 found
+    - repeat of 1578716351 found
+    - repeat of 1642757806 found
+    - repeat of 1811086748 found
+    - repeat of 1913010898 found
+    - repeat of 2373513735 found
+    - repeat of 3115467946 found
+    - repeat of 3156579392 found
+    - repeat of 3395259304 found
+    - repeat of 3567968294 found
+    - repeat of 3657289583 found
+    - repeat of 3768354834 found
+    - repeat of 3810055778 found
+    - repeat of 3976681874 found
+  - Scanning for duplicates completed (0.0004935 seconds)
+- Testing for repeats completed (0.061989 seconds)
+---
+20 repeats, p-value = 1 - 0.440915
+
+Memory usage summary: heap total: 1730652, heap peak: 1730652, stack peak: 5568
+         total calls   total memory   failed calls
+ malloc|          2        1730652              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+   large              2 100% ==================================================

@@ -1,0 +1,47 @@
+Testing sfc64
+	0..18446744073709551615 is range of generator
+	27163758263 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20 duplicates expected on average
+	2.06115e-09 is probability of zero duplicates
+	0x94dc3bf3 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated array of size 27163758263.
+  - Allocating memory completed (1.3286e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (101.383 seconds)
+  - Sorting started...
+  - Sorting completed (4298 seconds)
+  - Scanning for duplicates started...
+    - repeat of 1818994677527944406 found
+    - repeat of 1959728180143054431 found
+    - repeat of 3580131040441914575 found
+    - repeat of 4644795910407916157 found
+    - repeat of 4647069301192779625 found
+    - repeat of 4946356194917547479 found
+    - repeat of 4966512880943372638 found
+    - repeat of 6541778430360590501 found
+    - repeat of 9103855856149769848 found
+    - repeat of 9450395423303084808 found
+    - repeat of 9950878919142236145 found
+    - repeat of 10774632879799863418 found
+    - repeat of 12268415447763319725 found
+    - repeat of 15069356940879531315 found
+    - repeat of 15476848740310063951 found
+    - repeat of 15581355670406484447 found
+    - repeat of 15758836644197645981 found
+    - repeat of 16389508983575830498 found
+  - Scanning for duplicates completed (41.2401 seconds)
+- Testing for repeats completed (4440.63 seconds)
+---
+18 repeats, p-value = 0.381422
+
+Memory usage summary: heap total: 217310138808, heap peak: 217310138808, stack peak: 5600
+         total calls   total memory   failed calls
+ malloc|          2   217310138808              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+   large              2 100% ==================================================

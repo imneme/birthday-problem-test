@@ -1,0 +1,44 @@
+Testing xorshift128star64a
+	0..18446744073709551615 is range of generator
+	13034599790 outputs to scan for duplicates [3.03485*sqrt(range)]
+	4.60517 duplicates expected on average
+	0.01 is probability of zero duplicates
+	0x72f6e78a is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated bloomish filter with 1073741824 64-bit elements (3 bits/entry)
+    - allocated possible-match log with 536870912 64-bit elements
+  - Allocating memory completed (2.7416e-05 seconds)
+  - Phase 1, Gathering repeat candidates started...
+    - 362457177 repeat candidates found
+  - Phase 1, Gathering repeat candidates completed (1439.23 seconds)
+  - Reallocating memory started...
+    - Deallocated bloomish filter
+    - Allocated hash table of the same size
+  - Reallocating memory completed (3.31376 seconds)
+  - Phase 2, Storing candidates in hash table started...
+  - Phase 2, Storing candidates in hash table completed (13.7929 seconds)
+  - Phase 3, Testing candidates started...
+    - repeat of 18041370796819008763 found, step 2597899171
+    - repeat of 3046260867099830716 found, step 4630073998
+    - repeat of 10142928235725961691 found, step 4784148669
+    - repeat of 13157986233763268360 found, step 6776329375
+    - repeat of 10508712843915448885 found, step 8132935109
+    - repeat of 11146939070338079777 found, step 10202826340
+    - repeat of 3726473037459622314 found, step 11434602482
+    - repeat of 10329231227998016289 found, step 11563889508
+    - repeat of 10938784841579568047 found, step 12223366229
+  - Phase 3, Testing candidates completed (654.737 seconds)
+- Testing for repeats completed (2111.08 seconds)
+---
+9 repeats, p-value = 1 - 0.0196595
+
+Memory usage summary: heap total: 22548651009, heap peak: 13958716417, stack peak: 5680
+         total calls   total memory   failed calls
+ malloc|          5    22548651009              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          4    22548578305
+Histogram for block sizes:
+   large              5 100% ==================================================

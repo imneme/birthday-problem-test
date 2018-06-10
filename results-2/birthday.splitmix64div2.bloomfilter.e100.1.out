@@ -1,0 +1,31 @@
+Testing divided_rng<SplitMix64,2>
+        0..9223372036854775807 is range of generator
+        42949672961 outputs to scan for duplicates [14.1421*sqrt(range)]
+        100 duplicates expected on average
+        3.78351e-44 is probability of zero duplicates
+        0x6bc87e32 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated bloomish filter with 4294967296 64-bit elements (3 bits/entry)
+    - allocated possible-match log with 2147483648 64-bit elements
+  - Allocating memory completed (2.7746e-05 seconds)
+  - Phase 1, Gathering repeat candidates started...
+    - 773607258 repeat candidates found
+  - Phase 1, Gathering repeat candidates completed (3268.16 seconds)
+  - Reallocating memory started...
+    - Deallocated bloomish filter
+    - Allocated hash table of the same size
+  - Reallocating memory completed (11.7403 seconds)
+  - Phase 2, Storing candidates in hash table started...
+  - Phase 2, Storing candidates in hash table completed (21.3582 seconds)
+  - Phase 3, Testing candidates started...
+    - repeat of 6497401084100231171 found, step 4349343329
+    - repeat of 8982250182547917419 found, step 10013821426
+	[... 38 repeats omitted ...]
+    - repeat of 3352171370750978657 found, step 40445072164
+    - repeat of 3504357146487545 found, step 40476413442
+  - Phase 3, Testing candidates completed (1285.31 seconds)
+- Testing for repeats completed (4586.57 seconds)
+---
+42 repeats, p-value = 4.51174e-11

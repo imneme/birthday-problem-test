@@ -1,0 +1,45 @@
+Testing sfc32
+	0..4294967295 is range of generator
+	198893 outputs to scan for duplicates [3.03485*sqrt(range)]
+	4.60521 duplicates expected on average
+	0.00999963 is probability of zero duplicates
+	0x17ad2a1e is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated bloomish filter with 16384 64-bit elements (3 bits/entry)
+    - allocated possible-match log with 8192 32-bit elements
+  - Allocating memory completed (2.0673e-05 seconds)
+  - Phase 1, Gathering repeat candidates started...
+    - 5698 repeat candidates found
+  - Phase 1, Gathering repeat candidates completed (0.00490824 seconds)
+  - Reallocating memory started...
+    - Deallocated bloomish filter
+    - Allocated hash table of the same size
+  - Reallocating memory completed (1.6964e-05 seconds)
+  - Phase 2, Storing candidates in hash table started...
+  - Phase 2, Storing candidates in hash table completed (8.9795e-05 seconds)
+  - Phase 3, Testing candidates started...
+    - repeat of 3461274259 found, step 106024
+    - repeat of 3645025875 found, step 157329
+    - repeat of 2979787212 found, step 166220
+    - repeat of 2631539536 found, step 167924
+    - repeat of 2740051219 found, step 183474
+    - repeat of 4168529049 found, step 185254
+    - repeat of 3152647580 found, step 186148
+    - repeat of 2748131222 found, step 193992
+  - Phase 3, Testing candidates completed (0.00483236 seconds)
+- Testing for repeats completed (0.00989077 seconds)
+---
+8 repeats, p-value = 1 - 0.0453327
+
+Memory usage summary: heap total: 318465, heap peak: 236544, stack peak: 5696
+         total calls   total memory   failed calls
+ malloc|          5         318465              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          4         245761
+Histogram for block sizes:
+16384-16399           1  20% ================
+32768-32783           1  20% ================
+   large              3  60% ==================================================

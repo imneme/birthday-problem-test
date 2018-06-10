@@ -1,0 +1,52 @@
+- bump_allocator_static< std::__detail::_Hash_node<unsigned int, false> > (item size = 16) at 0x6042d0 created!
+- bump_allocator_static< std::__detail::_Hash_node_base* > (item size = 8) at 0x604310 created!
+- mempool at 0x604298 allocated new chunk at 0x7ff6009ab020
+- mempool at 0x604298 deallocated chunk at 0x7ff6009ab020
+Testing xoroshiro64starstar32
+	0..4294967295 is range of generator
+	198893 outputs to scan for duplicates [3.03485*sqrt(range)]
+	4.60521 duplicates expected on average
+	0.00999963 is probability of zero duplicates
+	0xbd77cc4 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated hash table of reserved for 198893 elements
+  - Allocating memory completed (0.000790403 seconds)
+  - Checking PRNG output started...
+    - repeat of 942004417 found, step 84402
+    - repeat of 2501121483 found, step 89546
+    - repeat of 3817107515 found, step 100110
+    - repeat of 2850669209 found, step 158800
+    - repeat of 3185144230 found, step 194145
+  - Checking PRNG output completed (0.0199369 seconds)
+- Testing for repeats completed (0.0207366 seconds)
+---
+5 repeats, p-value = 1 - 0.315139
+- bump_allocator_static< std::__detail::_Hash_node_base* > at 0x604310 destroyed!
+ - total_allocations_  = 1
+ - active_allocations_ = 0
+ - high_allocations_   = 1
+ - total_mem_  = 1619272
+ - active_mem_ = 0
+ - high_mem_   = 1619272
+- bump_allocator_static< std::__detail::_Hash_node<unsigned int, false> > at 0x6042d0 destroyed!
+ - total_allocations_  = 198888
+ - active_allocations_ = 0
+ - high_allocations_   = 198888
+ - total_mem_  = 3182208
+ - active_mem_ = 0
+ - high_mem_   = 3182208
+
+Memory usage summary: heap total: 1073815760, heap peak: 1073815568, stack peak: 2816
+         total calls   total memory   failed calls
+ malloc|          5     1073815568              0
+realloc|          4            192              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          6     1073742032
+Histogram for block sizes:
+   16-31              1  11% =========================
+   32-47              2  22% ==================================================
+   64-79              2  22% ==================================================
+  512-527             2  22% ==================================================
+   large              2  22% ==================================================

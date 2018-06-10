@@ -1,0 +1,54 @@
+Testing xoroshiro64plus32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0x6cedf99b is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated 256 buckets of capacity 2023
+    - allocated 256 bucket counters
+  - Allocating memory completed (1.8903e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.00351645 seconds)
+  - Sorting started...
+  - Sorting completed (0.0371274 seconds)
+  - Scanning for duplicates started...
+    - repeat of 1279026952 found
+    - repeat of 4020495369 found
+    - repeat of 2652775201 found
+    - repeat of 40644653 found
+    - repeat of 3915089965 found
+    - repeat of 1500303157 found
+    - repeat of 629228601 found
+    - repeat of 3287042618 found
+    - repeat of 139565640 found
+    - repeat of 1979804005 found
+    - repeat of 462603396 found
+    - repeat of 4092327302 found
+    - repeat of 961409430 found
+    - repeat of 2000080537 found
+    - repeat of 2491007641 found
+    - repeat of 1791867547 found
+    - repeat of 2839392669 found
+    - repeat of 749689251 found
+    - repeat of 1224550586 found
+    - repeat of 2511591368 found
+    - repeat of 1317147348 found
+    - repeat of 675992548 found
+    - repeat of 2483124967 found
+  - Scanning for duplicates completed (0.000603656 seconds)
+- Testing for repeats completed (0.0412835 seconds)
+---
+23 repeats, p-value = 1 - 0.212513
+
+Memory usage summary: heap total: 2145280, heap peak: 2145280, stack peak: 5616
+         total calls   total memory   failed calls
+ malloc|          3        2145280              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+ 1024-1039            1  33% =========================
+   large              2  66% ==================================================

@@ -1,0 +1,54 @@
+Testing xorshift64star32a
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	19.9994 duplicates expected on average
+	2.06239e-09 is probability of zero duplicates
+	0xf75cd257 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated 256 buckets of capacity 2023
+    - allocated 256 bucket counters
+  - Allocating memory completed (1.4825e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.00319917 seconds)
+  - Sorting started...
+  - Sorting completed (0.0328002 seconds)
+  - Scanning for duplicates started...
+    - repeat of 3623624704 found
+    - repeat of 2845381893 found
+    - repeat of 1122169360 found
+    - repeat of 1747213332 found
+    - repeat of 2913433641 found
+    - repeat of 2348351798 found
+    - repeat of 4232781389 found
+    - repeat of 1559256912 found
+    - repeat of 3787460179 found
+    - repeat of 2574278247 found
+    - repeat of 3444532329 found
+    - repeat of 1317736051 found
+    - repeat of 2369961847 found
+    - repeat of 2348123531 found
+    - repeat of 1664815270 found
+    - repeat of 3249875390 found
+    - repeat of 2344311489 found
+    - repeat of 928369356 found
+    - repeat of 1238405330 found
+    - repeat of 4230972380 found
+    - repeat of 2077015006 found
+    - repeat of 241146608 found
+    - repeat of 658432752 found
+  - Scanning for duplicates completed (0.000513891 seconds)
+- Testing for repeats completed (0.0365416 seconds)
+---
+23 repeats, p-value = 1 - 0.212467
+
+Memory usage summary: heap total: 2145280, heap peak: 2145280, stack peak: 5616
+         total calls   total memory   failed calls
+ malloc|          3        2145280              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+ 1024-1039            1  33% =========================
+   large              2  66% ==================================================

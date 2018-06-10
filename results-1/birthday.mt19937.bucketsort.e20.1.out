@@ -1,0 +1,56 @@
+Testing std::mt19937
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0x7e1fda62 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated 256 buckets of capacity 2023
+    - allocated 256 bucket counters
+  - Allocating memory completed (1.7383e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.0058779 seconds)
+  - Sorting started...
+  - Sorting completed (0.032578 seconds)
+  - Scanning for duplicates started...
+    - repeat of 105348648 found
+    - repeat of 755314755 found
+    - repeat of 2601823045 found
+    - repeat of 2687130441 found
+    - repeat of 957541465 found
+    - repeat of 4192014443 found
+    - repeat of 1677320818 found
+    - repeat of 3527359348 found
+    - repeat of 463682684 found
+    - repeat of 8935294 found
+    - repeat of 4001433982 found
+    - repeat of 2596576922 found
+    - repeat of 1813226143 found
+    - repeat of 3246088609 found
+    - repeat of 2824544165 found
+    - repeat of 647548584 found
+    - repeat of 711847343 found
+    - repeat of 4022575792 found
+    - repeat of 2369351872 found
+    - repeat of 1063167952 found
+    - repeat of 3798689247 found
+    - repeat of 2754869986 found
+    - repeat of 188353763 found
+    - repeat of 538303215 found
+    - repeat of 219000059 found
+  - Scanning for duplicates completed (0.00055424 seconds)
+- Testing for repeats completed (0.0390417 seconds)
+---
+25 repeats, p-value = 1 - 0.112189
+
+Memory usage summary: heap total: 4217856, heap peak: 4217856, stack peak: 10576
+         total calls   total memory   failed calls
+ malloc|          3        4217856              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+ 2048-2063            1  33% =========================
+   large              2  66% ==================================================

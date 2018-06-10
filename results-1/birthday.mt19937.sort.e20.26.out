@@ -1,0 +1,51 @@
+Testing std::mt19937
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0xfb280d8c is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated array of size 414487.
+  - Allocating memory completed (7.912e-06 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.00402369 seconds)
+  - Sorting started...
+  - Sorting completed (0.0458516 seconds)
+  - Scanning for duplicates started...
+    - repeat of 30487117 found
+    - repeat of 34788068 found
+    - repeat of 398383143 found
+    - repeat of 532261901 found
+    - repeat of 610760360 found
+    - repeat of 642785930 found
+    - repeat of 692604737 found
+    - repeat of 1178784021 found
+    - repeat of 1206271813 found
+    - repeat of 1395424657 found
+    - repeat of 2405454655 found
+    - repeat of 2537220764 found
+    - repeat of 2592081162 found
+    - repeat of 2807514956 found
+    - repeat of 2982773414 found
+    - repeat of 3003123859 found
+    - repeat of 3304511485 found
+    - repeat of 3372734749 found
+    - repeat of 3599201238 found
+    - repeat of 3902664268 found
+    - repeat of 4049958969 found
+    - repeat of 4216236358 found
+  - Scanning for duplicates completed (0.000423352 seconds)
+- Testing for repeats completed (0.0503352 seconds)
+---
+22 repeats, p-value = 1 - 0.279396
+
+Memory usage summary: heap total: 3388600, heap peak: 3388600, stack peak: 10528
+         total calls   total memory   failed calls
+ malloc|          2        3388600              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+   large              2 100% ==================================================

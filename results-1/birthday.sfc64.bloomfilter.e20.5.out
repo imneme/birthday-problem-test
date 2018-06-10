@@ -1,0 +1,53 @@
+Testing sfc64
+	0..18446744073709551615 is range of generator
+	27163758263 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20 duplicates expected on average
+	2.06115e-09 is probability of zero duplicates
+	0x32cdadba is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated bloomish filter with 2147483648 64-bit elements (3 bits/entry)
+    - allocated possible-match log with 1073741824 64-bit elements
+  - Allocating memory completed (2.3187e-05 seconds)
+  - Phase 1, Gathering repeat candidates started...
+    - 826877166 repeat candidates found
+  - Phase 1, Gathering repeat candidates completed (1659.98 seconds)
+  - Reallocating memory started...
+    - Deallocated bloomish filter
+    - Allocated hash table of the same size
+  - Reallocating memory completed (6.78428 seconds)
+  - Phase 2, Storing candidates in hash table started...
+  - Phase 2, Storing candidates in hash table completed (27.2575 seconds)
+  - Phase 3, Testing candidates started...
+    - repeat of 10553959381609746156 found, step 10233210361
+    - repeat of 533428709178093056 found, step 11619926271
+    - repeat of 13448523052089256731 found, step 11873664009
+    - repeat of 17089445151466697403 found, step 12197622180
+    - repeat of 9638946608014254459 found, step 15582522438
+    - repeat of 17080199460290083398 found, step 16376380368
+    - repeat of 17653101263729594137 found, step 18116377655
+    - repeat of 4910968384557930846 found, step 19486092056
+    - repeat of 1661782834280156354 found, step 20522348830
+    - repeat of 1057882146987105461 found, step 21418203749
+    - repeat of 4405716914643146880 found, step 22178056620
+    - repeat of 261472227617084348 found, step 22737568877
+    - repeat of 2885937147138922136 found, step 23172720368
+    - repeat of 6045638556011729866 found, step 24055459819
+    - repeat of 3590716481599519240 found, step 24701499017
+    - repeat of 6564494194249401969 found, step 24714511144
+    - repeat of 6570785598187743221 found, step 25354316879
+    - repeat of 7090683471181554822 found, step 27119586143
+  - Phase 3, Testing candidates completed (1123.54 seconds)
+- Testing for repeats completed (2817.56 seconds)
+---
+18 repeats, p-value = 0.381422
+
+Memory usage summary: heap total: 45097229313, heap peak: 27917360129, stack peak: 5696
+         total calls   total memory   failed calls
+ malloc|          5    45097229313              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          4    45097156609
+Histogram for block sizes:
+   large              5 100% ==================================================

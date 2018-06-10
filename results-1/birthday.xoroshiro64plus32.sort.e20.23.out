@@ -1,0 +1,56 @@
+Testing xoroshiro64plus32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0xdc8fe94f is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated array of size 414487.
+  - Allocating memory completed (5.635e-06 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.0014344 seconds)
+  - Sorting started...
+  - Sorting completed (0.0500337 seconds)
+  - Scanning for duplicates started...
+    - repeat of 20083564 found
+    - repeat of 219293409 found
+    - repeat of 248445173 found
+    - repeat of 436279201 found
+    - repeat of 462645539 found
+    - repeat of 480636231 found
+    - repeat of 744060970 found
+    - repeat of 747460452 found
+    - repeat of 760304132 found
+    - repeat of 1095455393 found
+    - repeat of 1180356659 found
+    - repeat of 1280043061 found
+    - repeat of 1288590605 found
+    - repeat of 1482072254 found
+    - repeat of 1484904931 found
+    - repeat of 1887084937 found
+    - repeat of 2041899060 found
+    - repeat of 2299631607 found
+    - repeat of 2394297249 found
+    - repeat of 2454068899 found
+    - repeat of 2535202092 found
+    - repeat of 2701711647 found
+    - repeat of 2747826374 found
+    - repeat of 3717827470 found
+    - repeat of 3922802260 found
+    - repeat of 4244910174 found
+    - repeat of 4261371407 found
+  - Scanning for duplicates completed (0.000443887 seconds)
+- Testing for repeats completed (0.051934 seconds)
+---
+27 repeats, p-value = 1 - 0.052483
+
+Memory usage summary: heap total: 1730652, heap peak: 1730652, stack peak: 5568
+         total calls   total memory   failed calls
+ malloc|          2        1730652              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+   large              2 100% ==================================================

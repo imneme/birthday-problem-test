@@ -1,0 +1,56 @@
+Testing xorshift64star32a
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	19.9994 duplicates expected on average
+	2.06239e-09 is probability of zero duplicates
+	0x4e0dfe37 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated 256 buckets of capacity 2023
+    - allocated 256 bucket counters
+  - Allocating memory completed (1.4688e-05 seconds)
+  - Storing PRNG output started...
+  - Storing PRNG output completed (0.00319929 seconds)
+  - Sorting started...
+  - Sorting completed (0.0329589 seconds)
+  - Scanning for duplicates started...
+    - repeat of 1907249923 found
+    - repeat of 1184810756 found
+    - repeat of 1910707975 found
+    - repeat of 140747788 found
+    - repeat of 1936321558 found
+    - repeat of 1760546340 found
+    - repeat of 2780415310 found
+    - repeat of 4101721950 found
+    - repeat of 2392095073 found
+    - repeat of 3309416038 found
+    - repeat of 1885280367 found
+    - repeat of 3037745276 found
+    - repeat of 3031640227 found
+    - repeat of 2771980210 found
+    - repeat of 3059536840 found
+    - repeat of 3587144141 found
+    - repeat of 2945624016 found
+    - repeat of 403186897 found
+    - repeat of 3847346648 found
+    - repeat of 1587465702 found
+    - repeat of 1842113768 found
+    - repeat of 1002962927 found
+    - repeat of 2848789494 found
+    - repeat of 3908908535 found
+    - repeat of 1013948922 found
+  - Scanning for duplicates completed (0.000527952 seconds)
+- Testing for repeats completed (0.0367157 seconds)
+---
+25 repeats, p-value = 1 - 0.112158
+
+Memory usage summary: heap total: 2145280, heap peak: 2145280, stack peak: 5616
+         total calls   total memory   failed calls
+ malloc|          3        2145280              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|          0              0
+Histogram for block sizes:
+ 1024-1039            1  33% =========================
+   large              2  66% ==================================================

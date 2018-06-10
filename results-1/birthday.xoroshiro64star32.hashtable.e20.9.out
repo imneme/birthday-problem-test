@@ -1,0 +1,48 @@
+Testing xoroshiro64star32
+	0..4294967295 is range of generator
+	414487 outputs to scan for duplicates [6.32456*sqrt(range)]
+	20.0001 duplicates expected on average
+	2.06097e-09 is probability of zero duplicates
+	0x314064f0 is seed for this run
+---
+- Testing for repeats started...
+  - Allocating memory started...
+    - allocated hash table of reserved for 414487 elements
+  - Allocating memory completed (0.00203548 seconds)
+  - Checking PRNG output started...
+    - repeat of 1479999375 found, step 30689
+    - repeat of 516589370 found, step 99418
+    - repeat of 3469770606 found, step 168132
+    - repeat of 3135765578 found, step 174951
+    - repeat of 897048616 found, step 177470
+    - repeat of 4210118838 found, step 199358
+    - repeat of 1847165111 found, step 207795
+    - repeat of 3768552732 found, step 226181
+    - repeat of 3280937967 found, step 250814
+    - repeat of 1382308617 found, step 261300
+    - repeat of 2788523647 found, step 262740
+    - repeat of 1810393148 found, step 264957
+    - repeat of 410384698 found, step 312356
+    - repeat of 1566652936 found, step 318127
+    - repeat of 3405128795 found, step 318255
+    - repeat of 313071103 found, step 326889
+    - repeat of 624985010 found, step 353461
+    - repeat of 2534755750 found, step 354171
+    - repeat of 2872166873 found, step 358730
+    - repeat of 730558364 found, step 378155
+    - repeat of 2862872731 found, step 378893
+    - repeat of 2678091310 found, step 392490
+  - Checking PRNG output completed (0.0871659 seconds)
+- Testing for repeats completed (0.0892214 seconds)
+---
+22 repeats, p-value = 1 - 0.279396
+
+Memory usage summary: heap total: 10260040, heap peak: 10260040, stack peak: 5648
+         total calls   total memory   failed calls
+ malloc|     414467       10260040              0
+realloc|          0              0              0  (nomove:0, dec:0, free:0)
+ calloc|          0              0              0
+   free|     414466       10187336
+Histogram for block sizes:
+   16-31         414465  99% ==================================================
+   large              2  <1% 
